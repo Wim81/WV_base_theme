@@ -56,4 +56,18 @@ Let's take a short look at what is exactly happening in each of these scripts.
 #### gulp watch
 - will perform these functions on each (appropriate) change and reload the browser to show the changes without manually having to refresh the browser window
 
+## Variables
+
+The theme provides you with a number of default values in the *\_variables.scss file*. The idea is to first establish what variables are needed for whatever project you are working on, and changing the default variables accordingly in this file. When you do, remember to remove the default comment so you are aware the variable has been modified.
+
+The variables are grouped in the following sections:
+- **colours** has most common colour variables listed.
+- **fonts** holds all things fonts & text. Please place imports (e.g. Google Fonts) on the top row of the file, though. We use a (non-Bootstrap) h0 class for a one-off main title for a project (in order not to lose the h1 tag for just one usage). Subtitles to headers are styled by using the secondary classes.
+- **transition** is usually just one variable which determines the transition effect for the entire site, however if your project has a number of different transitions, this would be the place to add more variables.
+- **box shadow** is usually just one variable which determines the box-shadow appearance for the entire site, however if your project has a number of different box-shadow setups, this would be the place to add more variables.
+- **spacing** extends Bootstraps standard spacing variables, giving you more control over the existing variables and producing more of them. All Bootstrap padding and margin classes will be affected by modifying spacers map (either by multiplying the 1rem baseline or by defining these in pixels or rem), which makes this really powerful and useful. You can add more lines if needed as well. Please be adviced to keep this list logically laid out and in ascending order. If not, you might make paddings and margins less intuitive to work with, which should be avoided.
+
 ## Components
+
+The index.html file contains a number of standard components in a "kitchen sink style". When in need for a component, check these out before heading over to the Bootstrap documentation. Chances are, the component has been incorporated here in a more customized way. If not, feel free to use Bootstrap components directly, of course. Components are constructed using BEM methodology whenever sensible.
+
