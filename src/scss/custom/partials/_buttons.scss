@@ -1,0 +1,14 @@
+.btn {
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+}
+
+.btn-primary:hover {
+  color: $primary;
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  color: $secondary;
+  background-color: transparent;
+}

@@ -1,0 +1,22 @@
+// WV Base Theme overall style sheet
+
+@import "./custom/reset";                                         // CSS reset
+@import "./custom/variables";                                     // project specific variables
+
+@import "../../node_modules/bootstrap/scss/bootstrap";            // import default Bootstrap code
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";   // FontAwesome
+
+@import "./custom/mixins";                                        // mixins
+@import "./custom/general";                                       // general styling
+@import "./custom/typography";                                    // typography & fonts
+
+@import "./custom/partials/header";                               // header
+@import "./custom/partials/footer";                               // footer
+@import "./custom/partials/navigation";                           // navigation
+@import "./custom/partials/breadcrumbs";                          // breadcrumbs
+@import "./custom/partials/pagination";                           // pagination
+@import "./custom/partials/page-parts";                           // page parts
+@import "./custom/partials/cta";                                  // call to action
+@import "./custom/partials/buttons";                              // buttons
+@import "./custom/partials/form";                                 // forms
+@import "./custom/partials/spacing";                              // custom margins & padding

@@ -1,0 +1,96 @@
+// to do: .h0 class voor one-off site title
+
+h1, .h1 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h1-mobile, $line-height-h1, $weight-bold);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h1;
+  }
+}
+
+.h1-secondary {
+  z-index: 0;  /* mixin source map fix */
+  margin-bottom: 0.5rem;
+  @include font($font-titles, $font-size-h1-secondary-mobile, $line-height-h1-secondary, $weight-bold, $secondary);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h1-secondary;
+  }
+}
+
+h2, .h2 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h2-mobile, $line-height-h2, $weight-bold);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h2;
+  }
+}
+
+h3, .h3 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h3-mobile, $line-height-h3, $weight-bold);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h3;
+  }
+}
+
+h4, .h4 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h4-mobile, $line-height-h4, $weight-bold);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h4;
+  }
+}
+
+h5, .h5 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h5-mobile, $line-height-h5, $weight-bold);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h5;
+  }
+}
+
+h6, .h6 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h6-mobile, $line-height-h6, $weight-bold);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h6;
+  }
+}
+
+p {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-text, $font-size-base, $line-height-base, $weight-regular, $gray-dark);
+}
+
+strong, em {
+  font-weight: $weight-bold;
+  font-style: normal;
+}
+
+ul {
+  margin-left: 1rem;
+
+  li {
+    list-style: none;
+    color: $gray-dark;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      position: relative;
+      right: 0.6rem;
+      bottom: 0.2rem;
+      background-color: $gray-dark;
+    }
+  }
+}
