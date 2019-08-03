@@ -16,21 +16,58 @@ header {
       color: transparent;
     }
 
+    &-toggler {
+
+      &:focus {
+        outline: none;
+      }
+
+      &-icon {
+
+        &:before {
+          content: "\f00d";
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+        }
+      }
+
+      &.collapsed {
+        .navbar-toggler-icon:before {
+          content:"\f0c9";
+        }
+      }
+    }
+
     .nav-item {
       box-sizing: border-box;
       border-bottom: 5px solid transparent;
 
+      &:last-of-type {
+        margin-bottom: 1rem;
+
+        @media (min-width: 992px) {
+          margin-bottom: 0;
+        }
+      }
+
       &:not(:last-of-type) {
-        margin-right: 1rem;
+        @media (min-width: 992px) {
+          margin-right: 1rem;
+        }
       }
 
       &.active {
         font-weight: $weight-bold;
-        border-bottom: 5px solid $primary;
+
+        @media (min-width: 992px) {
+          border-bottom: 5px solid $primary;
+        }
       }
 
       a {
         transform: translateY(3px);
+        width: 100%;
+        text-align: center;
 
         &:hover {
           color: $secondary;

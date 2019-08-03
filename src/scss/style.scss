@@ -4,7 +4,7 @@
 @import "./custom/variables";                                     // project specific variables
 
 @import "../../node_modules/bootstrap/scss/bootstrap";            // import default Bootstrap code
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";   // FontAwesome
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";   // FontAwesome
 
 @import "./custom/mixins";                                        // mixins
 @import "./custom/general";                                       // general styling
