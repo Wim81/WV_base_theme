@@ -1,4 +1,22 @@
-// to do: .h0 class voor one-off site title
+.h0 {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-h0-mobile, $line-height-h0, $weight-bold, $gray-medium);
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h0;
+  }
+}
+
+.h0-secondary {
+  z-index: 0;  /* mixin source map fix */
+  margin-bottom: 0.5rem;
+  @include font($font-titles, $font-size-h0-secondary-mobile, $line-height-h0-secondary, $weight-bold, $gray-medium);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-h1-secondary;
+  }
+}
 
 h1, .h1 {
   z-index: 0;  /* mixin source map fix */
@@ -93,4 +111,13 @@ ul {
       background-color: $gray-dark;
     }
   }
+}
+
+// theme internal use only
+.theme-section-title {
+  font-size: 20px;
+  background-color: $primary;
+  color: white;
+  padding: 5px 15px;
+  margin-bottom: 20px;
 }

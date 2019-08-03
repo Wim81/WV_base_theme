@@ -46,6 +46,14 @@ $line-height-base-plus:         $line-height-base;  // default
 
 // header styles
 
+$font-size-h0:                  $font-size-base * 3;    // default
+$font-size-h0-mobile:           $font-size-base * 1.2;  // default
+$line-height-h0:                $line-height-base;      // default
+
+$font-size-h0-secondary:        $font-size-base * 1.8;  // default
+$font-size-h0-secondary-mobile: $font-size-base * 1.4;  // default
+$line-height-h0-secondary:      $line-height-base;      // default
+
 $font-size-h1:                  $font-size-base * 2.5;  // default
 $font-size-h1-mobile:           $font-size-base * 1.8;  // default
 $line-height-h1:                $line-height-base;      // default
@@ -84,7 +92,7 @@ $weight-bold:                   700;  // default
 /* BUTTONS */
 
 $button-padding:                0.5rem 1rem;  // default
-$button-border-radius:          0rem;  // default
+$button-border-radius:          0rem;         // default
 
 
 /* TRANSITION */
