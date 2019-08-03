@@ -25,7 +25,10 @@ $box-shadow-color:              rgba(#000000,0.2);       // default
 $separator-color:               $gray-medium;            // default
 
 $primary-overlay:               rgba($primary, 0.25);    // default
+$primary-overlay-light:         rgba($primary, 0.1);     // default
 $secondary-overlay:             rgba($secondary, 0.25);  // default
+$secondary-overlay-light:       rgba($secondary, 0.1);   // default
+
 
 
 /* FONTS */
@@ -39,10 +42,10 @@ $font-size-base:                1rem;  // default
 $line-height-base:              1.2;  // default
 
 $font-size-base-min:            $font-size-base * 0.875;  // default
-$line-height-base-min:          $line-height-base;  // default
+$line-height-base-min:          $line-height-base;        // default
 
 $font-size-base-plus:           $font-size-base * 1.125;  // default
-$line-height-base-plus:         $line-height-base;  // default
+$line-height-base-plus:         $line-height-base;        // default
 
 // header styles
 
@@ -97,10 +100,28 @@ $button-border-radius:          0rem;         // default
 
 /* TRANSITION */
 
-$transition-standard:         all 0.3s ease-in-out;
+$transition-standard:         all 0.3s ease-in-out;        // default
 
 
 /* BOX SHADOW */
 
-$box-shadow-standard: 0 2px 4px 0 $box-shadow-color;
+$box-shadow-standard: 0 2px 4px 0 $box-shadow-color;       // default
 
+/* SPACING */
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+(
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3),
+        6: ($spacer * 4),
+        7: ($spacer * 5),
+        8: ($spacer * 6.25),
+        9: ($spacer * 7.5),
+        10: ($spacer * 9.375)
+),
+ $spacers)

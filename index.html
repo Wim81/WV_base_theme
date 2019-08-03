@@ -10,13 +10,40 @@
 </head>
 <body>
 
-    <header>
-        <p>Header here</p>
+    <header class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg align-items-stretch">
+                        <a class="navbar-brand" href="#">Wim's Theme</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wvBaseThemeNav01" aria-controls="wvBaseThemeNav01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="wvBaseThemeNav01">
+                            <ul class="navbar-nav no-list-style">
+                                <li class="nav-item d-flex align-items-center active">
+                                    <a class="nav-link" href="#">Link1</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link" href="#">Link2</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link" href="#">Link3</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link" href="#">Link4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
-        <p>Main content here</p>
-
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -42,10 +69,30 @@
 
                     <div class="theme-section-title">Buttons</div>
 
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    </div>
+
+
+                    <div class="theme-section-title">Page Parts</div>
+                    <p>to do</p>
+                    <ul class="no-list-style">
+                        <li>pp_top-image</li>
+                        <li>pp_text</li>
+                        <li>pp_text-text</li>
+                        <li>pp_text-image</li>
+                        <li>pp_text-video</li>
+                        <li>pp_quote</li>
+                        <li>pp_three-numbers</li>
+                        <li>pp_cta</li>
+                        <li>pp_slider</li>
+                        <li>pp_usp</li>
+                    </ul>
+
+
                 </div>
             </div>
         </div>
@@ -57,6 +104,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="dist/js/script.js"></script>
 </body>
 </html>

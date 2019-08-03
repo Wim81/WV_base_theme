@@ -93,11 +93,11 @@ strong, em {
 }
 
 ul {
-  margin-left: 1rem;
 
   li {
     list-style: none;
     color: $gray-dark;
+    margin-left: 0.7rem;
 
     &:before {
       content: '';
@@ -109,6 +109,16 @@ ul {
       right: 0.6rem;
       bottom: 0.2rem;
       background-color: $gray-dark;
+    }
+  }
+
+  &.no-list-style {
+    li {
+      margin-left: 0;
+
+      &:before {
+        display: none;
+      }
     }
   }
 }

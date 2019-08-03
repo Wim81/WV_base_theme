@@ -1,3 +1,41 @@
 header {
+  background-color: $primary-overlay-light;
+  border-bottom: 1px solid $primary;
 
+  .navbar {
+    padding: 0;
+
+    &-brand {
+      background-image: url("/logo.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100px;
+      height: 50px;
+      margin: 20px 0px;
+      color: transparent;
+    }
+
+    .nav-item {
+      box-sizing: border-box;
+      border-bottom: 5px solid transparent;
+
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+
+      &.active {
+        font-weight: $weight-bold;
+        border-bottom: 5px solid $primary;
+      }
+
+      a {
+        transform: translateY(3px);
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
 }
