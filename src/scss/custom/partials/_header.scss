@@ -31,7 +31,7 @@ header {
         }
       }
 
-      &.collapsed {
+      &[aria-expanded="false"] {
         .navbar-toggler-icon:before {
           content:"\f0c9";
         }
