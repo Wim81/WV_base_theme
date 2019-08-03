@@ -1,0 +1,28 @@
+{
+  "name": "wv_base_theme",
+  "version": "1.0.0",
+  "description": "Wim Verpoorten's personal front-end base theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wim81/WV_base_theme.git"
+  },
+  "author": "Wim Verpoorten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wim81/WV_base_theme/issues"
+  },
+  "homepage": "https://github.com/Wim81/WV_base_theme#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "sass": "^1.22.9"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "gulp": "^4.0.2"
+  }
+}
