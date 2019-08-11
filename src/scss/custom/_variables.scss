@@ -20,6 +20,7 @@ $offwhite:                      #F8F8F8;  // default
 $gray-dark:                     #333333;  // default
 $gray-medium:                   #999999;  // default
 $gray-light:                    #CCCCCC;  // default
+$gray-very-light:               #EEEEEE;  // default
 
 $box-shadow-color:              rgba(#000000,0.2);       // default
 $separator-color:               $gray-medium;            // default
@@ -39,7 +40,7 @@ $font-titles:                   'Oxygen', sans-serif;   // default
 // base styles for standard text & plus/min styles for small variations
 
 $font-size-base:                1rem;  // default
-$line-height-base:              1.2;  // default
+$line-height-base:              1.4;  // default
 
 $font-size-base-min:            $font-size-base * 0.875;  // default
 $line-height-base-min:          $line-height-base;        // default
