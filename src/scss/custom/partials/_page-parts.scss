@@ -1,9 +1,12 @@
 .pp_top-image {
   z-index: 0;  /* mixin source map fix */
   @include full-width;
-  @include bg-img;
-  padding: 15rem 0 10rem 0;
   position: relative;
+
+  &-inner {
+    padding: 15rem 0 10rem 0;
+    @include bg-img;
+  }
 
   &:before {
     content: '';
