@@ -43,6 +43,7 @@
 
     ul {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       margin-bottom: 0;
 
@@ -52,12 +53,15 @@
         bottom: 0;
       }
 
-      li+li:before {
-        content: '|';
-        display: inline-block;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        color: $gray-medium;
+      @media (min-width: 480px) {
+        flex-direction: row;
+
+        li+li:before {
+          content: '|';
+          display: inline-block;
+          margin-left: 1rem;
+          color: $gray-medium;
+        }
       }
 
       a {
