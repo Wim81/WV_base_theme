@@ -3,26 +3,32 @@
 }
 
 .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+
+    li:first-of-type a {
+      margin-left: 0;
+    }
+  }
+
   li {
     display: inline-block;
     line-height: initial;
     padding-bottom: 1rem;
-
-    &:last-of-type {
-      a {
-        margin-right: 0;
-      }
-    }
   }
 
   a {
     font-size: 0px;
     color: $gray-medium;
     transition: $transition-standard;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
 
     i {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
 
     }
 
