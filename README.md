@@ -72,3 +72,12 @@ The variables are grouped in the following sections:
 The index.html file contains a number of standard components in a "kitchen sink style". When in need for a component, check these out before heading over to the Bootstrap documentation. Chances are, the component has been incorporated here in a more customized way. If not, feel free to use Bootstrap components directly, of course. Components are constructed using BEM methodology whenever sensible.
 
 These components use the overall variables to style its contents where possible, but will often use specific styling which is located in the /scss/custom/partials folder. Feel free to modify these files to your liking. We recommend you just rename the original file, make your own new file (with the original file's initial name) and place your own styling code in there by copying the parts you can use from the original and adding your own. If you want to take this even further, you can rename the partials folder in its entirety and make a new partials folder and build the underlying files from scratch. Whichever way works best for you.
+
+## Mixins
+
+A number of mixins has been added to make some standard styling situations easier & quicker to implement. The following custom mixins can be used:
+
+- `full-width`: from within whichever container you can make sure your div is full-width by applying this mixin. Typically very handy for page parts which need a full width background image or background color.
+- `font`: this mixin is extensively used in the typography file and combines a number of font/text variables which are common.
+- `bg-img`: this mixin quickly applies the typical background image setup no-repeat/cover/center.
+
