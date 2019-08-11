@@ -1,0 +1,40 @@
+/* background classes */
+
+.bg {
+
+  &-gray {
+
+    &-very-light {
+      background-color: $gray-very-light;
+    }
+
+    &-light {
+      background-color: $gray-light;
+    }
+
+    &-medium {
+      background-color: $gray-medium;
+
+      p {
+        color: $white;
+      }
+    }
+
+    &-dark {
+      background-color: $gray-dark;
+
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  &-primary {
+    background-color: $primary;
+
+    p {
+      color: $white;
+    }
+  }
+}
+
