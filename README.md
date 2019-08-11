@@ -30,7 +30,9 @@ Clone the contents of this repository into a folder on your computer. Open the c
 Open the command line in the root of your project folder. The base theme's Gulp file allows you to perform a couple of simple functions, or to start up a watcher which will run the appropriate function when changes occur to your files in predefined locations. It is recommended to simply use the watcher.
 
 `gulp style`will compile your scss code into a single minified css file in the dist folder.
+
 `gulp script`will compile your js code into a single minified js file in the dist folder.
+
 `gulp images` will put minified copies of your images in the dist folder.
 
 `gulp watch` will perform any of these scripts whenever a new or modified file is spotted in the appropriate locations in the src folder.
