@@ -1,3 +1,41 @@
+.link {
+  font-weight: $weight-bold;
+  color: $primary;
+  transition: $transition-standard;
+
+  &:hover {
+    text-decoration: none;
+    color: $secondary;
+  }
+
+  &-white {
+    color: $white;
+    background-color: $primary; // to be removed when needed
+
+    &:hover {
+      color: $primary;
+      background-color: transparent; // to be removed when needed
+    }
+
+    &-alt:hover {
+      color: $gray-light;
+    }
+  }
+
+  &-arrow:after {
+    content: '\f30b';
+    font-family: "Font Awesome 5 Free";
+    padding-left: 0.5rem;
+  }
+
+  &-chevron:after {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
 .home-link {
   background-image: url("/logo.png");
   background-position: left center;
