@@ -1,8 +1,7 @@
 .pp_top-image {
+  z-index: 0;  /* mixin source map fix */
   @include full-width;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include bg-img;
   padding: 15rem 0 10rem 0;
   position: relative;
 
@@ -19,5 +18,17 @@
 
 
 .pp_text {
+
+}
+
+.pp_text-text {
+
+}
+
+.pp_text-image {
+
+}
+
+.pp_text-video {
 
 }

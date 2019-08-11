@@ -16,3 +16,10 @@
   font-weight: $weight;
   color: $color;
 }
+
+/* background image standard setup */
+@mixin bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
