@@ -16,6 +16,28 @@
     @media (min-width: 768px) {
       text-align: left;
     }
+
+    h6 {
+      padding-bottom: 1rem;
+    }
+
+    ul {
+
+      li {
+        margin-bottom: 0.5rem;
+        color: $gray-medium;
+
+        a.footer-link {
+          color: $gray-medium;
+          transition: $transition-standard;
+
+          &:hover {
+            text-decoration: none;
+            color: $primary;
+          }
+        }
+      }
+    }
   }
 
   &-bottom {
