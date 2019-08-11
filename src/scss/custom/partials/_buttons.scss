@@ -12,3 +12,18 @@
   color: $secondary;
   background-color: transparent;
 }
+
+.home-link {
+  background-image: url("/logo.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 100px;
+  height: 50px;
+  color: transparent;
+
+  &:hover {
+    color: transparent;
+  }
+}

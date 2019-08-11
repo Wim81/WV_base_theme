@@ -6,14 +6,7 @@ header {
     padding: 0;
 
     &-brand {
-      background-image: url("/logo.png");
-      background-position: left center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 100px;
-      height: 50px;
       margin: 20px 0px;
-      color: transparent;
     }
 
     &-toggler {
