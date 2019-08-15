@@ -24,13 +24,13 @@
 
   &-arrow:after {
     content: '\f30b';
-    font-family: "Font Awesome 5 Free";
+    font-family: $font-awesome;
     padding-left: 0.5rem;
   }
 
   &-chevron:after {
     content: '\f054';
-    font-family: "Font Awesome 5 Free";
+    font-family: $font-awesome;
     padding-left: 0.5rem;
     font-size: 0.8rem;
   }

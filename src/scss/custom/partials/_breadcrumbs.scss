@@ -1,3 +1,49 @@
 .breadcrumbs {
 
+  &-wrapper {
+    @media (max-width: 768px) {
+      display: none;  // disables breadcrumbs on mobile screens. Change if needed.
+    }
+  }
+
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  padding-top: 1rem;
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0.5rem 1rem 0 0;
+
+    &-link {
+      color: $grey-medium;
+      font-family: $font-text;
+      font-size: $font-size-breadcrumb;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+
+    &:last-of-type {
+      pointer-events: none;
+    }
+  }
+}
+
+.breadcrumb +.breadcrumb {
+    padding-left: 1rem;
+
+  &:before {
+    content: "\f054";
+    font-family: $font-awesome;
+    font-weight: bold;
+    position: relative;
+    left: -1rem;
+    top: 0.1rem;
+    color: $grey-medium;
+    font-size: $font-size-breadcrumb-seperator;
+  }
 }

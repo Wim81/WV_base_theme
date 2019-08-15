@@ -36,6 +36,7 @@ $secondary-overlay-light:       rgba($secondary, 0.1);   // default
 
 $font-text:                     'Raleway', sans-serif;  // default
 $font-titles:                   'Oxygen', sans-serif;   // default
+$font-awesome:                  'Font Awesome 5 Free', sans-serif;
 
 // base styles for standard text & plus/min styles for small variations
 
@@ -47,6 +48,9 @@ $line-height-base-min:          $line-height-base *0.875; // default
 
 $font-size-base-plus:           $font-size-base * 1.125;  // default
 $line-height-base-plus:         $line-height-base;        // default
+
+$font-size-breadcrumb:          $font-size-base * 0.75;   // default
+$font-size-breadcrumb-seperator:  $font-size-base * 0.67; // default
 
 // header styles
 
@@ -101,7 +105,7 @@ $button-border-radius:          0rem;         // default
 
 /* TRANSITION */
 
-$transition-standard:         all 0.3s ease-in-out;        // default
+$transition-standard:           all 0.3s ease-in-out;        // default
 
 
 /* BOX SHADOW */

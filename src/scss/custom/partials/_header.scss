@@ -19,7 +19,7 @@ header {
 
         &:before {
           content: "\f00d";
-          font-family: 'Font Awesome 5 Free';
+          font-family: $font-awesome;
           font-weight: 900;
         }
       }
