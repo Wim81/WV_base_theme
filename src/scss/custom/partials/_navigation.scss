@@ -10,15 +10,9 @@
 
   &-white {
     color: $white;
-    background-color: $primary; // to be removed when needed
 
     &:hover {
-      color: $primary;
-      background-color: transparent; // to be removed when needed
-    }
-
-    &-alt:hover {
-      color: $grey-light;
+      color: $white-50;
     }
   }
 
