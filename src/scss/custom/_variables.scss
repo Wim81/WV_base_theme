@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen:700|Raleway:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:700|Raleway:400,400i,700|Italianno&display=swap');
 /*
 *
 * THEME VARIABLES
@@ -37,6 +37,7 @@ $white-50:                      rgba($white, 0.5);
 
 $font-text:                     'Raleway', sans-serif;  // default
 $font-titles:                   'Oxygen', sans-serif;   // default
+$font-quote:                    'Italianno', cursive;   //default
 $font-awesome:                  'Font Awesome 5 Free', sans-serif;
 
 // base styles for standard text & plus/min styles for small variations
@@ -52,6 +53,12 @@ $line-height-base-plus:         $line-height-base;        // default
 
 $font-size-breadcrumb:          $font-size-base * 0.75;   // default
 $font-size-breadcrumb-seperator:  $font-size-base * 0.67; // default
+
+$font-size-quote-text:          5rem;                   // default
+$font-size-quote-text-mobile:   3rem;                   // default
+$line-height-quote-text:        4rem;                   // default
+$line-height-quote-text-mobile: 2.5rem;                   // default
+$font-size-quote-source:        $font-size-base-min;    // default
 
 // header styles
 
