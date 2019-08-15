@@ -1,6 +1,6 @@
 .h0 {
   z-index: 0;  /* mixin source map fix */
-  @include font($font-titles, $font-size-h0-mobile, $line-height-h0, $weight-bold, $gray-medium);
+  @include font($font-titles, $font-size-h0-mobile, $line-height-h0, $weight-bold, $grey-medium);
   text-transform: uppercase;
 
   @media (min-width: 768px) {
@@ -11,7 +11,7 @@
 .h0-secondary {
   z-index: 0;  /* mixin source map fix */
   margin-bottom: 0.5rem;
-  @include font($font-titles, $font-size-h0-secondary-mobile, $line-height-h0-secondary, $weight-bold, $gray-medium);
+  @include font($font-titles, $font-size-h0-secondary-mobile, $line-height-h0-secondary, $weight-bold, $grey-medium);
 
   @media (min-width: 768px) {
     font-size: $font-size-h1-secondary;
@@ -84,7 +84,7 @@ h6, .h6 {
 
 p {
   z-index: 0;  /* mixin source map fix */
-  @include font($font-text, $font-size-base, $line-height-base, $weight-regular, $gray-dark);
+  @include font($font-text, $font-size-base, $line-height-base, $weight-regular, $grey-dark);
 }
 
 strong, em {
@@ -96,7 +96,7 @@ ul {
 
   li {
     list-style: none;
-    color: $gray-dark;
+    color: $grey-dark;
     margin-left: 0.7rem;
 
     &:before {
@@ -108,7 +108,7 @@ ul {
       position: relative;
       right: 0.6rem;
       bottom: 0.2rem;
-      background-color: $gray-dark;
+      background-color: $grey-dark;
     }
   }
 

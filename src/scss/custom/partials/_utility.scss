@@ -2,18 +2,18 @@
 
 .bg {
 
-  &-gray {
+  &-grey {
 
     &-very-light {
-      background-color: $gray-very-light;
+      background-color: $grey-very-light;
     }
 
     &-light {
-      background-color: $gray-light;
+      background-color: $grey-light;
     }
 
     &-medium {
-      background-color: $gray-medium;
+      background-color: $grey-medium;
 
       p {
         color: $white;
@@ -21,7 +21,7 @@
     }
 
     &-dark {
-      background-color: $gray-dark;
+      background-color: $grey-dark;
 
       p {
         color: $white;
