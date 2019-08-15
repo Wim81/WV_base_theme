@@ -1,14 +1,30 @@
 .btn {
   padding: $button-padding;
   border-radius: $button-border-radius;
-}
 
-.btn-primary:hover {
-  color: $primary;
-  background-color: transparent;
-}
+  &-white {
+    border: 1px solid $white;
+    color: $white;
 
-.btn-secondary:hover {
-  color: $secondary;
-  background-color: transparent;
+    &:hover {
+      background-color: $white;
+
+      .bg-grey-very-light & { color: $grey-very-light }
+      .bg-grey-light & { color: $grey-light }
+      .bg-grey-medium & { color: $grey-medium }
+      .bg-grey-dark & { color: $grey-dark }
+      .bg-primary & { color: $primary }
+      .bg-secondary & { color: $secondary }
+    }
+  }
+
+  &-primary:hover {
+    color: $primary;
+    background-color: transparent;
+  }
+
+  &-secondary:hover {
+    color: $secondary;
+    background-color: transparent;
+  }
 }

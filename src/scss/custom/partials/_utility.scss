@@ -36,5 +36,13 @@
       color: $white;
     }
   }
+
+  &-secondary {
+    background-color: $secondary;
+
+    p {
+      color: $white;
+    }
+  }
 }
 
