@@ -87,6 +87,14 @@ p {
   @include font($font-text, $font-size-base, $line-height-base, $weight-regular, $grey-dark);
 }
 
+p.base-plus {
+  font-size: $font-size-base-plus;
+}
+
+p.base-min {
+  font-size: $font-size-base-min;
+}
+
 strong, em {
   font-weight: $weight-bold;
   font-style: normal;
