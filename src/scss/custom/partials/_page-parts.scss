@@ -28,8 +28,7 @@
 
 }
 
-.pp_text-image,
-.pp_text-video {
+.pp_text-image {
 
   &-inner {
 
@@ -43,6 +42,19 @@
 
   &--img {
     width: 100%;
+  }
+}
+
+.pp_text-video {
+
+  &-inner {
+
+    .reverse & {
+
+      div:first-of-type {
+        order: 3;
+      }
+    }
   }
 
   &--video {
@@ -58,10 +70,6 @@
       padding-bottom: 51%;
     }
   }
-}
-
-.pp_text-video {
-
 }
 
 .pp_quote {
