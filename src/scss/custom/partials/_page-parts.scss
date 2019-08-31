@@ -1,4 +1,4 @@
-.pp_top-image {
+.pp_top_image {
   z-index: 0;  /* mixin source map fix */
   @include full-width;
   position: relative;
@@ -24,11 +24,11 @@
   /* nothing default */
 }
 
-.pp_text-text {
-
+.pp_text_text {
+  /* nothing default */
 }
 
-.pp_text-image {
+.pp_text_image {
 
   &-inner {
 
@@ -40,12 +40,12 @@
     }
   }
 
-  &--img {
+  &-img {
     width: 100%;
   }
 }
 
-.pp_text-video {
+.pp_text_video {
 
   &-inner {
 
@@ -57,7 +57,7 @@
     }
   }
 
-  &--video {
+  &-video {
     position: absolute;
     width: 100%;
     height: 100%;
