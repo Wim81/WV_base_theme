@@ -1,0 +1,19 @@
+.slick {
+
+  &-prev:before {
+    content: '\f137';
+  }
+
+  &-next:before {
+    content: '\f138';
+  }
+
+  &-prev:before,
+  &-next:before {
+    font-family: $font-awesome;
+    font-weight: $weight-bold;
+    font-size: 24px;
+    color: $primary;
+    opacity: 1;
+  }
+}

@@ -3,8 +3,10 @@
 @import "./custom/reset";                                         // CSS reset
 @import "./custom/variables";                                     // project specific variables
 
-@import "../../node_modules/bootstrap/scss/bootstrap";            // import default Bootstrap code
+@import "../../node_modules/bootstrap/scss/bootstrap";                    // import default Bootstrap code
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";   // FontAwesome
+@import "../../node_modules/slick-carousel/slick/slick.scss";             // Slick slider
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";       // Slick slider
 
 @import "./custom/mixins";                                        // mixins
 @import "./custom/general";                                       // general styling
@@ -20,4 +22,5 @@
 @import "./custom/partials/cta";                                  // call to action
 @import "./custom/partials/buttons";                              // buttons
 @import "./custom/partials/form";                                 // forms
+@import "./custom/partials/slider";                               // slider
 @import "./custom/partials/utility";                              // custom utility classes
