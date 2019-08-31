@@ -216,8 +216,11 @@
 
     &-inner {
       box-shadow: $box-shadow-standard;
-      margin-left: 5rem;
-      margin-right: 5rem;
+
+      @media (min-width: 768px) {
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
     }
 
     &-text {
@@ -237,14 +240,24 @@
 
       &:before {
         content: open-quote;
-        top: -25px;
-        left: 60px;
+        top: -10px;
+        left: 45px;
+
+        @media (min-width: 768px) {
+          top: -25px;
+          left: 60px;
+        }
       }
 
       &:after {
         content: close-quote;
-        bottom: -110px;
-        right: 60px;
+        bottom: -80px;
+        right: 45px;
+
+        @media (min-width: 768px) {
+          bottom: -110px;
+          right: 60px;
+        }
       }
     }
 
