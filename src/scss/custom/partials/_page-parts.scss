@@ -208,34 +208,71 @@
 
 .pp_slider_testimonials {
 
-  &-item {
+  .testimonial {
 
     &-wrapper {
 
     }
-  }
 
-  &-text {
-
-  }
-
-  &-img {
-    @include bg-img;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-  }
-
-  &-author {
-
-    &-name {
-
+    &-inner {
+      box-shadow: $box-shadow-standard;
+      margin-left: 5rem;
+      margin-right: 5rem;
     }
 
-    &-function {
+    &-text {
+      padding: 75px 50px;
+      position: relative;
+      quotes: "“" "”" "‘" "’";
 
+      &:before,
+      &:after {
+        font-family: $font-text;
+        display: inline-block;
+        color: $white;
+        font-size: 5em;
+        position: absolute;
+        opacity: 0.4;
+      }
+
+      &:before {
+        content: open-quote;
+        top: -25px;
+        left: 60px;
+      }
+
+      &:after {
+        content: close-quote;
+        bottom: -110px;
+        right: 60px;
+      }
+    }
+
+    &-img {
+      @include bg-img;
+      width: 50px;
+      height: 50px;
+      position: relative;
+      top: -33px;
+      margin-bottom: -23px;
+      border: 3px solid $white;
+    }
+
+    &-author {
+
+      &-name {
+        font-size: $font-size-base-min;
+        font-weight: $weight-bold;
+        color: $primary;
+      }
+
+      &-function {
+        font-size: $font-size-base-min;
+      }
     }
   }
+
+
 }
 
 

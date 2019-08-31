@@ -44,6 +44,7 @@ $font-awesome:                  'Font Awesome 5 Free', sans-serif;
 
 $font-size-base:                1rem;  // default
 $line-height-base:              1.6;  // default
+$line-height-header:            1.4;
 
 $font-size-base-min:            $font-size-base * 0.875;  // default
 $line-height-base-min:          $line-height-base *0.875; // default
@@ -57,46 +58,46 @@ $font-size-breadcrumb-seperator:  $font-size-base * 0.67; // default
 $font-size-quote-text:          5rem;                   // default
 $font-size-quote-text-mobile:   3rem;                   // default
 $line-height-quote-text:        4rem;                   // default
-$line-height-quote-text-mobile: 2.5rem;                   // default
+$line-height-quote-text-mobile: 2.5rem;                 // default
 $font-size-quote-source:        $font-size-base-min;    // default
 
 // header styles
 
 $font-size-h0:                  $font-size-base * 3;    // default
 $font-size-h0-mobile:           $font-size-base * 2;    // default
-$line-height-h0:                $line-height-base;      // default
+$line-height-h0:                $line-height-header;    // default
 
 $font-size-h0-secondary:        $font-size-base * 1.8;  // default
 $font-size-h0-secondary-mobile: $font-size-base * 1.4;  // default
-$line-height-h0-secondary:      $line-height-base;      // default
+$line-height-h0-secondary:      $line-height-header;    // default
 
 $font-size-h1:                  $font-size-base * 2.5;  // default
 $font-size-h1-mobile:           $font-size-base * 1.8;  // default
-$line-height-h1:                $line-height-base;      // default
+$line-height-h1:                $line-height-header;    // default
 
 $font-size-h1-secondary:        $font-size-base * 1.5;  // default
 $font-size-h1-secondary-mobile: $font-size-base * 1.2;  // default
-$line-height-h1-secondary:      $line-height-base;      // default
+$line-height-h1-secondary:      $line-height-header;    // default
 
 $font-size-h2:                  $font-size-base * 2.2;  // default
 $font-size-h2-mobile:           $font-size-base * 1.8;  // default
-$line-height-h2:                $line-height-base;      // default
+$line-height-h2:                $line-height-header;    // default
 
 $font-size-h3:                  $font-size-base * 2;    // default
 $font-size-h3-mobile:           $font-size-base * 1.6;  // default
-$line-height-h3:                $line-height-base;      // default
+$line-height-h3:                $line-height-header;    // default
 
 $font-size-h4:                  $font-size-base * 1.8;  // default
 $font-size-h4-mobile:           $font-size-base * 1.4;  // default
-$line-height-h4:                $line-height-base;      // default
+$line-height-h4:                $line-height-header;    // default
 
 $font-size-h5:                  $font-size-base * 1.5;  // default
 $font-size-h5-mobile:           $font-size-base * 1.2;  // default
-$line-height-h5:                $line-height-base-min;  // default
+$line-height-h5:                $line-height-header;    // default
 
 $font-size-h6:                  $font-size-base * 1.2;  // default
 $font-size-h6-mobile:           $font-size-base * 1;    // default
-$line-height-h6:                $line-height-base;      // default
+$line-height-h6:                $line-height-header;    // default
 
 // font-weights
 
