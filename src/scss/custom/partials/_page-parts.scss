@@ -272,9 +272,14 @@
     }
 
     &-text {
-      padding: 75px 50px;
+      padding: 75px 10px;
       position: relative;
       quotes: "“" "”" "‘" "’";
+
+      @media (min-width: 540px) {
+        padding: 75px 50px;
+        font-size: $font-size-h3;
+      }
 
       &:before,
       &:after {
@@ -324,11 +329,17 @@
       &-name {
         font-size: $font-size-base-min;
         font-weight: $weight-bold;
+        line-height: 1.2;
         color: $primary;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
 
       &-function {
         font-size: $font-size-base-min;
+        line-height: 1.2;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
     }
   }
