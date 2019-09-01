@@ -293,8 +293,13 @@
 
       &:before {
         content: open-quote;
-        top: -10px;
-        left: 45px;
+        top: 0;
+        left: 20px;
+
+        @media (min-width: 540px) {
+          top: -20px;
+          left: 45px;
+        }
 
         @media (min-width: 768px) {
           top: -25px;
@@ -304,8 +309,13 @@
 
       &:after {
         content: close-quote;
-        bottom: -80px;
-        right: 45px;
+        bottom: -50px;
+        right: 20px;
+
+        @media (min-width: 540px) {
+          bottom: -105px;
+          right: 45px;
+        }
 
         @media (min-width: 768px) {
           bottom: -110px;
