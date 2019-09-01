@@ -249,9 +249,6 @@ $(document).ready( function() {
     /*********************************************************************/
 
 
-
-
-
     //pp_facts counter action
     var facts = [];
 

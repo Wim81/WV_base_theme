@@ -1,33 +1,33 @@
 // gulpfile.js
-var gulp = require("gulp");
-var polyfill = require("@babel/polyfill");
-var babel = require("gulp-babel");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var cssnano = require("cssnano");
-var sourcemaps = require("gulp-sourcemaps");
-var browserSync = require("browser-sync").create();
-var rename = require("gulp-rename");
-var watch = require("gulp-watch");
-var jslint = require("gulp-jslint");
-var uglify = require("gulp-uglify");
-var imagemin = require("gulp-imagemin");
+const gulp = require("gulp");
+const polyfill = require("babel-polyfill"); /* moet misschien nog weg, op dit moment niet in use */
+const babel = require("gulp-babel");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+const sourcemaps = require("gulp-sourcemaps");
+const browserSync = require("browser-sync").create();
+const rename = require("gulp-rename");
+const watch = require("gulp-watch");
+const jslint = require("gulp-jslint");
+const uglify = require("gulp-uglify");
+const imagemin = require("gulp-imagemin");
 
 
 // Name of the css file which will be produced in the dist folder. Modify if you wish.
-var cssFileName = "style.css";
+const cssFileName = "style.css";
 
 
 // Define both source and destination folders & affected file types
-var paths = {
+const paths = {
     styles: {
         src: "src/scss/**/*.scss",
         dest: "dist/css"
     },
     html: "./*.html",
     scripts: {
-        src: [polyfill, "src/js/**/*.js"],
+        src: ["src/js/**/*.js"],
         dest: "dist/js"
     },
     images: {
