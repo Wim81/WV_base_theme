@@ -15,7 +15,8 @@
     &-medium {
       background-color: $grey-medium;
 
-      p {
+      p,
+      span {
         color: $white;
       }
     }
@@ -23,7 +24,8 @@
     &-dark {
       background-color: $grey-dark;
 
-      p {
+      p,
+      span {
         color: $white;
       }
     }
@@ -32,7 +34,8 @@
   &-primary {
     background-color: $primary;
 
-    p {
+    p,
+    span {
       color: $white;
     }
   }
@@ -40,7 +43,8 @@
   &-secondary {
     background-color: $secondary;
 
-    p {
+    p,
+    span {
       color: $white;
     }
   }

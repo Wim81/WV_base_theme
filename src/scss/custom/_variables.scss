@@ -35,16 +35,23 @@ $white-50:                      rgba($white, 0.5);
 
 /* FONTS */
 
+@font-face {
+  font-family: 'Clock Font';
+  src: url('../../../font/clock-font-italic.ttf');
+}
+
 $font-text:                     'Raleway', sans-serif;  // default
 $font-titles:                   'Oxygen', sans-serif;   // default
 $font-quote:                    'Italianno', cursive;   //default
 $font-awesome:                  'Font Awesome 5 Free', sans-serif;
+$font-clock:                    'Clock Font', monospace;    //default
 
 // base styles for standard text & plus/min styles for small variations
 
 $font-size-base:                1rem;  // default
 $line-height-base:              1.6;  // default
 $line-height-header:            1.4;
+$line-height-tight:             1.2;
 
 $font-size-base-min:            $font-size-base * 0.875;  // default
 $line-height-base-min:          $line-height-base *0.875; // default
@@ -60,6 +67,11 @@ $font-size-quote-text-mobile:   3rem;                   // default
 $line-height-quote-text:        4rem;                   // default
 $line-height-quote-text-mobile: 2.5rem;                 // default
 $font-size-quote-source:        $font-size-base-min;    // default
+
+$font-size-fact-number-mobile:  3rem;                   //default
+$font-size-fact-number-desktop: 5rem;                   //default
+$font-size-fact-prefix-suffix-mobile:  1.5rem;          //default
+$font-size-fact-prefix-suffix-desktop: 2rem;            //default
 
 // header styles
 
