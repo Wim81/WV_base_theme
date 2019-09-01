@@ -1,5 +1,7 @@
 // gulpfile.js
 var gulp = require("gulp");
+var polyfill = require("@babel/polyfill");
+var babel = require("gulp-babel");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -25,7 +27,7 @@ var paths = {
     },
     html: "./*.html",
     scripts: {
-        src: "src/js/**/*.js",
+        src: [polyfill, "src/js/**/*.js"],
         dest: "dist/js"
     },
     images: {
@@ -60,6 +62,7 @@ function script() {
         gulp
             .src(paths.scripts.src)
             .pipe(sourcemaps.init())
+            .pipe(babel({presets: ['@babel/env']}))
             .pipe(jslint())
             .pipe(uglify())
             .pipe(sourcemaps.write())
