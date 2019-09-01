@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Wim81/WV_base_theme#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "countup.js": "^2.0.4",
     "jquery": "^3.4.1",
     "sass": "^1.22.9",
     "slick-carousel": "^1.8.1"
