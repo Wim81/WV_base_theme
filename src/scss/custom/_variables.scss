@@ -26,8 +26,10 @@ $box-shadow-color:              rgba(#000000,0.2);       // default
 $separator-color:               $grey-medium;            // default
 
 $primary-overlay:               rgba($primary, 0.25);    // default
+$primary-overlay-dark:          rgba($primary, 0.5);     // default
 $primary-overlay-light:         rgba($primary, 0.1);     // default
 $secondary-overlay:             rgba($secondary, 0.25);  // default
+$secondary-overlay-dark:        rgba($secondary, 0.5);   // default
 $secondary-overlay-light:       rgba($secondary, 0.1);   // default
 
 $white-50:                      rgba($white, 0.5);
