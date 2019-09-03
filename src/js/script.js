@@ -7,6 +7,15 @@ $(document).ready( function() {
      slidesToShow: 1,
      });
 
+    /* make form labels appear when there is input */
+    $(".label-switch").keyup(function() {
+        if ($(this).val() ) {
+            $(this).prev().css("opacity", 1);
+        } else {
+            $(this).prev().css("opacity", 0);
+        }
+    })
+
 
     /*********************************************************************/
 

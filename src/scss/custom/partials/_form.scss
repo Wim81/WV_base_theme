@@ -1,3 +1,29 @@
 .form {
 
+  &-label {
+    width: 100%;
+    opacity: 0;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $font-size-form-label;
+    transition: $transition-base;
+  }
+
+  &-input {
+    width: 100%;
+    border: 1px solid $form-input-border-color;
+    background-color: $form-input-bg-color;
+    color: $grey-dark;
+    padding: 10px 20px;
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: $box-shadow-standard;
+    }
+  }
 }
