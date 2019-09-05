@@ -18,12 +18,14 @@
 
   &-arrow:after {
     content: '\f30b';
+    display: inline-block;
     font-family: $font-awesome;
     padding-left: 0.5rem;
   }
 
   &-chevron:after {
     content: '\f054';
+    display: inline-block;
     font-family: $font-awesome;
     padding-left: 0.5rem;
     font-size: 0.8rem;
