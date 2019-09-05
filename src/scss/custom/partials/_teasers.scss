@@ -1,50 +1,96 @@
 .teaser1 {
 
+   &-inner {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     transition: $transition-standard;
+
+     &:hover {
+       text-decoration: none;
+
+       .teaser1-img {
+         transform: scale(1.1);
+       }
+
+       .teaser1-link:after {
+         transform: translateX(10px);
+       }
+     }
+   }
+
+   &-img {
+     width: 100%;
+     height: auto;
+     transition: $transition-base;
+
+     &-wrapper {
+       overflow: hidden;
+       position: relative;
+     }
+   }
+
+   &-label {
+     font-size: $font-size-teaser1-label;
+     font-weight: $weight-bold;
+     text-transform: uppercase;
+     background-color: $primary;
+     color: $white;
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 0.25rem 0.75rem 0.15rem 0.75rem;
+   }
+
+   &-title {
+     line-height: $line-height-tight;
+   }
+
+   &-text {
+     flex: 1 1 auto;
+   }
+
+   &-link {
+     pointer-events: none;
+
+     &:after {
+       transition: $transition-base;
+     }
+   }
+}
+
+.teaser2 {
+
   &-inner {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
     transition: $transition-standard;
+    border: 1px solid $grey-light;
 
     &:hover {
       text-decoration: none;
-
-      .teaser1-img {
-        transform: scale(1.1);
-      }
-
-      .teaser1-link:after {
-        transform: translateX(10px);
-      }
+      background-color: $grey-very-light;
     }
   }
 
   &-img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    transition: $transition-base;
 
     &-wrapper {
-      overflow: hidden;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  }
-
-  &-label {
-    font-size: $font-size-teaser1-label;
-    font-weight: $weight-bold;
-    text-transform: uppercase;
-    background-color: $primary;
-    color: $white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.25rem 0.75rem 0.15rem 0.75rem;
   }
 
   &-title {
     line-height: $line-height-tight;
+    display: block;
   }
 
   &-text {
@@ -52,9 +98,38 @@
   }
 
   &-link {
+    pointer-events: none;
+  }
 
-    &:after {
-      transition: $transition-base;
+  &-heavy-hover {
+
+    .teaser2-img-hover {
+      width: 50%;
+      height: auto;
+      display: none;
+    }
+
+    .teaser2-inner {
+
+      &:hover {
+        background-color: $primary;
+
+        .teaser2 {
+          &-title,
+          &-text,
+          &-link {
+            color: $white;
+          }
+
+          &-img {
+            display: none;
+          }
+
+          &-img-hover {
+            display: inline-block;
+          }
+        }
+      }
     }
   }
 }
