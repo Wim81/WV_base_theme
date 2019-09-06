@@ -133,3 +133,52 @@
     }
   }
 }
+
+.teaser3 {
+  overflow: hidden;
+
+  &:hover {
+
+    .teaser3-content {
+      transform: translateY(0);
+
+    }
+  }
+
+  &-inner {
+    display: block;
+    position: relative;
+  }
+
+  &-img {
+    width: 100%;
+    height: auto;
+
+    &-wrapper {
+
+    }
+  }
+
+  &-content {
+    background-color: $primary-overlay-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: $transition-base;
+  }
+
+  &-title,
+  &-text {
+    color: $white;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 0;
+  }
+}
