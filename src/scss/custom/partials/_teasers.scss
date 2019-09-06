@@ -182,3 +182,53 @@
     margin-bottom: 0;
   }
 }
+
+.teaser4 {
+  perspective: 1000px;
+
+  &:hover {
+
+    .teaser4-inner {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &-inner {
+    display: block;
+    position: relative;
+    transition: $transition-flipcard;
+    transform-style: preserve-3d;
+  }
+
+  &-img {
+    width: 100%;
+    height: auto;
+
+    &-wrapper {
+      backface-visibility: hidden;
+    }
+  }
+
+  &-content {
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+
+  &-title,
+  &-text {
+    color: $white;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 0;
+  }
+}
