@@ -9,7 +9,7 @@
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
+  // position: absolute;    // enable this line if you don't want other parts' position to be affected
   padding-top: 1rem;
 
   .breadcrumb {

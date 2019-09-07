@@ -1,3 +1,94 @@
 .pagination {
+  justify-content: center;
+  padding-left: 15px;
 
+  .pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-previous {
+      order: 2;
+      padding: 10px 10px 0 0;
+
+      @media (min-width: 360px) {
+        order: 0;
+        padding: 0;
+      }
+    }
+
+    &-next {
+      order: 3;
+      padding: 10px 0 0 10px;
+
+      @media (min-width: 360px) {
+        order: 0;
+        padding: 0;
+      }
+    }
+
+    &-previous-link,
+    &-next-link {
+      font-weight: $weight-bold;
+      transition: $transition-standard;
+
+      &:before,
+      &:after {
+        font-family: "Font Awesome 5 Free";
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $secondary;
+      }
+    }
+
+    &-previous-link:before {
+      content: '\f100';
+    }
+
+    &-next-link:after {
+      content: '\f101';
+    }
+
+    &-items {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+
+      @media (min-width: 360px) {
+        width: auto;
+      }
+
+      &-inner {
+        display: flex;
+        justify-content: center;
+
+        .pager-item {
+
+          &-link {
+            color: $grey-dark;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            &:hover {
+              text-decoration: none;
+              color: $secondary;
+            }
+          }
+
+          &--active {
+
+            .pager-item-link {
+              font-weight: $weight-bold;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
 }
