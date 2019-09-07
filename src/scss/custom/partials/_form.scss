@@ -1,16 +1,13 @@
 .form {
-  background: lightblue; // temp
-  padding: 1rem 2rem;
-
-  &-inverted {
-    background-color: $primary;
-  }
+  background: $grey-very-light;
+  padding: 2rem;
 
   label,
   input,
   textarea,
   select {
     width: 100%;
+    background-color: $white-50;
   }
 
   input[type="radio"],
@@ -22,6 +19,80 @@
     width: auto;
   }
 
+  input:-internal-autofill-selected {
+    background-color: $white-50 !important;  // override browser default
+  }
+
+  label {
+    background-color: transparent;
+    margin-bottom: 0;
+    font-size: $font-size-form-label;
+    text-transform: uppercase;
+    transition: $transition-base;
+  }
+
+  input {
+    margin-bottom: 1rem;
+
+    &::placeholder {
+      color: $grey-light;
+    }
+
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"],
+    &[type="password"] {
+      padding: 0.5rem 1rem;
+
+      &:focus {
+        outline: none;
+        box-shadow: $box-shadow-standard;
+      }
+    }
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+
+    &::placeholder {
+      color: $grey-light;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: $box-shadow-standard;
+    }
+  }
+
+  select {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    -webkit-appearance: none;
+  }
+
+  .select-wrapper {
+    position: relative;
+
+    &:after {
+      content: '\f107';
+      font-family: $font-awesome;
+      font-weight: bold;
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: $grey-dark;
+    }
+  }
+
+  &-inverted {
+    background-color: $primary;
+
+    label {
+      color: $white;
+    }
+  }
 
 /*    code for cta form, change that later
   &-label {
