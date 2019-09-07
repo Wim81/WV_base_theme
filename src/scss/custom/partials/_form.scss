@@ -1,5 +1,29 @@
 .form {
+  background: lightblue; // temp
+  padding: 1rem 2rem;
 
+  &-inverted {
+    background-color: $primary;
+  }
+
+  label,
+  input,
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: auto;
+  }
+
+  input[type="checkbox"] + label {
+    width: auto;
+  }
+
+
+/*    code for cta form, change that later
   &-label {
     width: 100%;
     opacity: 0;
@@ -26,4 +50,5 @@
       box-shadow: $box-shadow-standard;
     }
   }
+  */
 }
