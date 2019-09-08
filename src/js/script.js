@@ -16,6 +16,11 @@ $(document).ready( function() {
         }
     })
 
+    /* form select arrow movement on click */
+    $("form .select-wrapper").on("click", function() {
+       $(this).toggleClass("open");
+    });
+
 
     /*********************************************************************/
 
