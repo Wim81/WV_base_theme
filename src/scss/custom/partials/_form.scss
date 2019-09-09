@@ -29,9 +29,14 @@
     font-size: $font-size-form-label;
     text-transform: uppercase;
     transition: $transition-base;
+
+    &.label-select {
+      pointer-events: none;
+    }
   }
 
   input {
+    border: 1px solid $grey-medium;
     margin-bottom: 1rem;
 
     &::placeholder {
@@ -48,6 +53,36 @@
         outline: none;
         box-shadow: $box-shadow-standard;
       }
+    }
+
+    &[type="checkbox"] {
+      visibility: hidden;
+
+      + label {
+        text-transform: none;
+        font-size: $font-size-base;
+        position: relative;
+        padding-left: 0.5rem;
+
+        &:before {
+          content: '\f0c8';
+          font-family: $font-awesome;
+          font-size: 14px;
+          display: inline-block;
+          position: absolute;
+          left: -1rem;
+          top: 0.2rem;
+        }
+
+        &.checked:before {
+          content: '\f14a';
+        }
+      }
+    }
+
+    &[type="file"] {
+      position: absolute;
+      left: -99999rem;
     }
   }
 
@@ -91,6 +126,47 @@
       transform: rotate(-180deg);
     }
   }
+
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    input {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .file-input-wrapper {
+    width: 100%;
+
+    &-btn {
+      border: 1px solid $grey-medium;
+      margin-bottom: 1rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: $grey-light;
+      transition: $transition-standard;
+
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+
+    &-filename {
+      margin-left: 0.5rem;
+      text-transform: none;
+    }
+  }
+
 
   &-inverted {
     background-color: $primary;

@@ -764,7 +764,7 @@
                         <label for="message">Your Message</label>
                         <textarea id="message" cols="50" rows="5" placeholder="Your Message"></textarea>
 
-                        <label for="occupation">Your Occupation</label>
+                        <label for="occupation" class="label-select">Your Occupation</label>
                         <div class="select-wrapper">
                             <select id="occupation">
                                 <option value="0" selected disabled>Select your occupation</option>
@@ -776,15 +776,27 @@
                         </div>
 
                         <label>Your Gender</label>
-                        <input type="radio" id="gender_m" value="gender_m">Male<br>
-                        <input type="radio" id="gender_f" value="gender_f">Female<br>
-                        <input type="radio" id="gender_o" value="gender_o">Other<br>
+                        <div class="radio-group">
+                            <span class="radio-group-item">
+                                <input type="radio" name="gender" id="gender_m" value="gender_m">Male
+                            </span>
+                            <span class="radio-group-item">
+                                <input type="radio" name="gender" id="gender_f" value="gender_f">Female
+                            </span>
+                            <span class="radio-group-item">
+                                <input type="radio" name="gender" id="gender_o" value="gender_o">Other
+                            </span>
+                        </div>
 
                         <input type="checkbox" id="awesome">
-                        <label for="awesome">Click here if you're awesome.</label>
+                        <label for="awesome" class="label-checkbox">Click here if you're awesome.</label>
 
-                        <label for="file">File Upload</label>
-                        <input type="file" id="file" placeholder="hu">
+                        <label for="file" class="file-input-wrapper">
+                            <div class="file-input-wrapper-title">File Upload</div>
+                            <input type="file" id="file" placeholder="hu">
+                            <span class="file-input-wrapper-btn">Upload a file</span>
+                            <span class="file-input-wrapper-filename" id="file-selected">xxx</span>
+                        </label>
 
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
 
@@ -812,9 +824,9 @@
                         <label for="message2">Your Message</label>
                         <textarea id="message2" cols="50" rows="5" placeholder="Your Message"></textarea>
 
-                        <label for="occupation">Your Occupation</label>
+                        <label for="occupation2" class="label-select">Your Occupation</label>
                         <div class="select-wrapper">
-                            <select id="occupation">
+                            <select id="occupation2">
                                 <option value="0" selected disabled>Select your occupation</option>
                                 <option value="1">Priest</option>
                                 <option value="2">Monk</option>
@@ -824,15 +836,27 @@
                         </div>
 
                         <label>Your Gender</label>
-                        <input type="radio" id="gender_m2" value="gender_m">Male<br>
-                        <input type="radio" id="gender_f2" value="gender_f">Female<br>
-                        <input type="radio" id="gender_o2" value="gender_o">Other<br>
+                        <div class="radio-group">
+                            <span class="radio-group-item">
+                                <input type="radio" name="gender" id="gender_m2" value="gender_m">Male
+                            </span>
+                            <span class="radio-group-item">
+                                <input type="radio" name="gender" id="gender_f2" value="gender_f">Female
+                            </span>
+                            <span class="radio-group-item">
+                                <input type="radio" name="gender" id="gender_o2" value="gender_o">Other
+                            </span>
+                        </div>
 
                         <input type="checkbox" id="awesome2">
-                        <label for="awesome2">Click here if you're awesome.</label>
+                        <label for="awesome2" class="label-checkbox">Click here if you're awesome.</label>
 
-                        <label for="file2">File Upload</label>
-                        <input type="file" id="file2" placeholder="hu">
+                        <label for="file2" class="file-input-wrapper">
+                            <div class="file-input-wrapper-title">File Upload</div>
+                            <input type="file" id="file2" placeholder="hu">
+                            <span class="file-input-wrapper-btn">Upload a file</span>
+                            <span class="file-input-wrapper-filename" id="file-selected">xxx</span>
+                        </label>
 
                         <button type="submit" class="btn btn-white btn-block">Submit</button>
 

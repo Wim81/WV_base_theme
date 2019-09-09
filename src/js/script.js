@@ -17,8 +17,21 @@ $(document).ready( function() {
     })
 
     /* form select arrow movement on click */
-    $("form .select-wrapper").on("click", function() {
+    $("form .select-wrapper").on("click", function(e) {
        $(this).toggleClass("open");
+       console.log(e.target);
+    });
+
+    /* form checkbox toggle */
+    $("form .label-checkbox").on("click", function() {
+       $(this).toggleClass("checked");
+    });
+
+    /* form show file name uploaded file */
+    $('#file').bind('change', function() {
+        var fileName = '';
+        fileName = $(this).val();
+        $('#file-selected').html(fileName);
     });
 
 
