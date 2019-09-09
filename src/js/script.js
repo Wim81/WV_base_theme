@@ -28,10 +28,10 @@ $(document).ready( function() {
     });
 
     /* form show file name uploaded file */
-    $('#file').bind('change', function() {
+    $('.file-input-action').bind('change', function() {
         var fileName = '';
         fileName = $(this).val();
-        $('#file-selected').html(fileName);
+        $(this).parent().find('.file-input-wrapper-filename').html(fileName);
     });
 
 
