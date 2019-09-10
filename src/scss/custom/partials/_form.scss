@@ -171,8 +171,34 @@
   &-inverted {
     background-color: $primary;
 
-    label {
+    label,
+    input,
+    textarea,
+    select {
       color: $white;
+    }
+
+    .select-wrapper:after {
+      color: $white;
+    }
+
+    option {
+      background-color: $primary;
+    }
+
+    .radio-group-item {
+      color: $white;
+    }
+
+    .file-input-wrapper-btn {
+      color: $primary;
+      background-color: $white;
+      border: 1px solid $white;
+
+      &:hover {
+        color: $white;
+        background-color: $primary;
+      }
     }
   }
 
