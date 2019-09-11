@@ -48,6 +48,10 @@
       color: $white;
     }
   }
+
+  &-transparent {
+    background-color: transparent;
+  }
 }
 
 /* overlay classes */

@@ -18,6 +18,18 @@
     }
   }
 
+  &-primary-white {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      border: 1px solid $white;
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
   &-primary:hover {
     color: $primary;
     background-color: transparent;
