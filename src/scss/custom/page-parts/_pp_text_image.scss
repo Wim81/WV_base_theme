@@ -1,0 +1,16 @@
+.pp_text_image {
+
+  &-inner {
+
+    .reverse & {
+
+      div:first-of-type {
+        order: 3;
+      }
+    }
+  }
+
+  &-img {
+    width: 100%;
+  }
+}

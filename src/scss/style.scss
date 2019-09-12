@@ -1,27 +1,40 @@
 // WV Base Theme overall style sheet
 
-@import "./custom/reset";                                         // CSS reset
-@import "./custom/variables";                                     // project specific variables
+@import "./custom/reset";                                                 // CSS reset
+@import "./custom/variables";                                             // project specific variables
 
 @import "../../node_modules/bootstrap/scss/bootstrap";                    // import default Bootstrap code
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";   // FontAwesome
 @import "../../node_modules/slick-carousel/slick/slick.scss";             // Slick slider
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";       // Slick slider
 
-@import "./custom/mixins";                                        // mixins
-@import "./custom/general";                                       // general styling
-@import "./custom/typography";                                    // typography & fonts
-@import "./custom/theme-only";                                    // only for internal use
+@import "./custom/mixins";                                                // mixins
+@import "./custom/general";                                               // general styling
+@import "./custom/typography";                                            // typography & fonts
+@import "./custom/theme-only";                                            // only for internal use
 
-@import "./custom/partials/header";                               // header
-@import "./custom/partials/footer";                               // footer
-@import "./custom/partials/navigation";                           // navigation & links
-@import "./custom/partials/breadcrumbs";                          // breadcrumbs
-@import "./custom/partials/pagination";                           // pagination
-@import "./custom/partials/page-parts";                           // page parts
-@import "./custom/partials/teasers";                              // teasers
-@import "./custom/partials/cta";                                  // call to action
-@import "./custom/partials/buttons";                              // buttons
-@import "./custom/partials/form";                                 // forms
-@import "./custom/partials/slider";                               // slider
-@import "./custom/partials/utility";                              // custom utility classes
+/*  PAGE PARTS   -   you can comment out the ones you are not using, so they will not be compiled into the css file  */
+@import "./custom/page-parts/pp_cta";                                     // Call to action block
+@import "./custom/page-parts/pp_facts";                                   // Facts block with animated numbers
+@import "./custom/page-parts/pp_quote";                                   // Quote block
+@import "./custom/page-parts/pp_slider_testimonials";                     // Testimonial block with slider functionality
+@import "./custom/page-parts/pp_steps";                                   // Steps block, shows parts of a process
+@import "./custom/page-parts/pp_text";                                    // Text block, just one column
+@import "./custom/page-parts/pp_text_image";                              // Text & image block
+@import "./custom/page-parts/pp_text_text";                               // Text block, two columns
+@import "./custom/page-parts/pp_text_video";                              // Text & video block
+@import "./custom/page-parts/pp_top_image";                               // Top image incl. title & subtitle
+@import "./custom/page-parts/pp_usp";                                     // USP block, quickly summarizing USP's or something similar
+/*  END OF PAGE PARTS  */
+
+@import "./custom/partials/header";                                       // header
+@import "./custom/partials/footer";                                       // footer
+@import "./custom/partials/navigation";                                   // navigation & links
+@import "./custom/partials/breadcrumbs";                                  // breadcrumbs
+@import "./custom/partials/pagination";                                   // pagination
+@import "./custom/partials/teasers";                                      // teasers
+@import "./custom/partials/cta";                                          // call to action
+@import "./custom/partials/buttons";                                      // buttons
+@import "./custom/partials/form";                                         // forms
+@import "./custom/partials/slider";                                       // slider
+@import "./custom/partials/utility";                                      // custom utility classes

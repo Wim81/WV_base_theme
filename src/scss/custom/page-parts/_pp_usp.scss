@@ -1,0 +1,19 @@
+.pp_usp {
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+
+    &-icon {
+      @include bg-img-contain;
+      height: 80px;
+    }
+
+    &-text {
+      color: $primary;
+      max-width: 180px;
+      align-self: center;
+    }
+  }
+}

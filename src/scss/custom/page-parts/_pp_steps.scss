@@ -1,0 +1,100 @@
+.pp_steps {
+  counter-reset: steps;
+
+  &-left {
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-right {
+    margin-left: 7%;
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  &-title {
+    line-height: 1.2;
+  }
+
+  &-text {
+    flex: 1 1 auto;
+  }
+
+  &-step {
+    padding-left: 50px;
+    position: relative;
+
+    &:before {
+      counter-increment: steps;
+      content: counter(steps);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: $weight-bold;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      position: absolute;
+      left: -20px;
+    }
+
+    &:not(:last-of-type) {
+      padding-bottom: 1rem;
+    }
+
+    &:last-of-type {
+
+      .pp_steps-step-text {
+        margin-bottom: 0;
+      }
+    }
+
+    &-white {
+
+      &:before {
+        background-color: $white;
+        color: $primary;
+      }
+
+      &:not(:last-of-type) {
+        border-left: 2px solid $white;
+      }
+    }
+
+    &-primary {
+
+      &:before {
+        background-color: $primary;
+        color: $white;
+      }
+
+      &:not(:last-of-type) {
+        border-left: 2px solid $primary;
+      }
+    }
+
+    &-secondary {
+
+      &:before {
+        background-color: $secondary;
+        color: $white;
+      }
+
+      &:not(:last-of-type) {
+        border-left: 2px solid $secondary;
+      }
+    }
+
+    &-title {
+      line-height: 1.2;
+    }
+
+    &-text {
+
+    }
+  }
+}
