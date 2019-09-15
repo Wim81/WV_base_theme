@@ -13,6 +13,7 @@ const watch = require("gulp-watch");
 const jslint = require("gulp-jslint");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
+const newer = require("gulp-newer");
 
 
 // Name of the css file which will be produced in the dist folder. Modify if you wish.
@@ -78,6 +79,7 @@ function images() {
     return (
         gulp
             .src(paths.images.src)
+            .pipe(newer(paths.images.dest))
             .pipe(imagemin({verbose: true}))
             .pipe(gulp.dest(paths.images.dest))
             .pipe(browserSync.stream())
@@ -102,13 +104,13 @@ function watcher(){
     });
     style();
     script();
-    // images();
+    images();
     // for each watcher, we first define the location which needs to be watched
     // and then we define which function needs to be executed upon change
     watch(paths.styles.src, style);
     watch(paths.html, reload);
     watch(paths.scripts.src, script);
-    // watch(paths.images.src, images);
+    watch(paths.images.src, images);
 }
 
 exports.watch = watcher;
