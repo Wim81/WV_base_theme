@@ -1,19 +1,24 @@
 // WV Base Theme overall style sheet
+/* You can comment out any of these scss files you are not using, so they will not be compiled into the final css file  */
 
 @import "./custom/reset";                                                 // CSS reset
 @import "./custom/variables";                                             // project specific variables
 
+/*  NPM IMPORTS  */
 @import "../../node_modules/bootstrap/scss/bootstrap";                    // import default Bootstrap code
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";   // FontAwesome
 @import "../../node_modules/slick-carousel/slick/slick.scss";             // Slick slider
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";       // Slick slider
+/*  END OF NPM IMPORTS  */
 
+/*  GENERAL STUFF  */
 @import "./custom/mixins";                                                // mixins
 @import "./custom/general";                                               // general styling
 @import "./custom/typography";                                            // typography & fonts
 @import "./custom/theme-only";                                            // only for internal use
+/*  END OF GENERAL STUFF  */
 
-/*  PAGE PARTS   -   you can comment out the ones you are not using, so they will not be compiled into the css file  */
+/*  PAGE PARTS  */
 @import "./custom/page-parts/pp_cta";                                     // Call to action block
 @import "./custom/page-parts/pp_facts";                                   // Facts block with animated numbers
 @import "./custom/page-parts/pp_quote";                                   // Quote block
@@ -27,6 +32,7 @@
 @import "./custom/page-parts/pp_usp";                                     // USP block, quickly summarizing USP's or something similar
 /*  END OF PAGE PARTS  */
 
+/*  OTHER PARTIALS  */
 @import "./custom/partials/header";                                       // header
 @import "./custom/partials/footer";                                       // footer
 @import "./custom/partials/navigation";                                   // navigation & links
@@ -38,3 +44,4 @@
 @import "./custom/partials/form";                                         // forms
 @import "./custom/partials/slider";                                       // slider
 @import "./custom/partials/utility";                                      // custom utility classes
+/*  END OF OTHER PARTIALS  */
