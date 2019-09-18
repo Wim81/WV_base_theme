@@ -1,5 +1,5 @@
 .footer {
-  background-color: $primary-overlay-light;
+  background-color: $footer-background-color;
   border-top: 1px solid $primary;
 
   &-home-link {
@@ -50,6 +50,7 @@
 
       @media (min-width: 768px) {
         flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
       }
 

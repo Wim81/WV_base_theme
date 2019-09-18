@@ -39,11 +39,11 @@
   &:before {
     content: "\f054";
     font-family: $font-awesome;
-    font-weight: bold;
+    font-weight: $weight-bold;
     position: relative;
     left: -1rem;
     top: 0.1rem;
     color: $grey-medium;
-    font-size: $font-size-breadcrumb-seperator;
+    font-size: $font-size-breadcrumb-separator;
   }
 }
