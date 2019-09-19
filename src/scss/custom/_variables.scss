@@ -10,19 +10,19 @@
 
 /* COLOURS */
 
-$primary:                       #5E419A;  // default
-$secondary:                     #B31B0B;  // default
+$primary:                       #5E419A;                 // default
+$secondary:                     #B31B0B;                 // default
 
-$black:                         #000000;  // default
-$white:                         #FFFFFF;  // default
-$offwhite:                      #F8F8F8;  // default
+$black:                         #000000;                 // default
+$white:                         #FFFFFF;                 // default
+$offwhite:                      #F8F8F8;                 // default
 
-$grey-dark:                     #333333;  // default
-$grey-medium:                   #999999;  // default
-$grey-light:                    #CCCCCC;  // default
-$grey-very-light:               #EEEEEE;  // default
+$grey-dark:                     #333333;                 // default
+$grey-medium:                   #999999;                 // default
+$grey-light:                    #CCCCCC;                 // default
+$grey-very-light:               #EEEEEE;                 // default
 
-$white-50:                      rgba($white, 0.5);
+$white-50:                      rgba($white, 0.5);       // default
 
 $box-shadow-color:              rgba(#000000,0.2);       // default
 $separator-color:               $grey-medium;            // default
@@ -36,6 +36,10 @@ $secondary-overlay:             rgba($secondary, 0.25);  // default
 $secondary-overlay-dark:        rgba($secondary, 0.5);   // default
 $secondary-overlay-light:       rgba($secondary, 0.1);   // default
 
+$header-background-color:       $offwhite;               // default
+$footer-background-color:       $offwhite;               // default
+
+
 
 /* FONTS */
 
@@ -44,11 +48,11 @@ $secondary-overlay-light:       rgba($secondary, 0.1);   // default
   src: url('../../../font/clock-font-italic.ttf');
 }
 
-$font-text:                     'Raleway', sans-serif;  // default
-$font-titles:                   'Oxygen', sans-serif;   // default
-$font-quote:                    'Italianno', cursive;   //default
-$font-awesome:                  'Font Awesome 5 Free', sans-serif;
-$font-clock:                    'Clock Font', monospace;    //default
+$font-text:                     'Raleway', sans-serif;               // default
+$font-titles:                   'Oxygen', sans-serif;                // default
+$font-quote:                    'Italianno', cursive;                // default
+$font-awesome:                  'Font Awesome 5 Free', sans-serif;   // leave as is
+$font-clock:                    'Clock Font', monospace;             // default
 
 // base styles for standard text & plus/min styles for small variations
 
@@ -64,7 +68,7 @@ $font-size-base-plus:           $font-size-base * 1.125;  // default
 $line-height-base-plus:         $line-height-base;        // default
 
 $font-size-breadcrumb:          $font-size-base * 0.75;   // default
-$font-size-breadcrumb-seperator:  $font-size-base * 0.67; // default
+$font-size-breadcrumb-separator:  $font-size-base * 0.67; // default
 
 $font-size-form-label:          $font-size-base * 0.75;   // default
 $font-size-teaser1-label:       $font-size-base * 0.75;   // default
@@ -139,7 +143,7 @@ $transition-flipcard:           all 0.7s ease-in-out;        // default
 
 /* BOX SHADOW */
 
-$box-shadow-standard: 0 2px 4px 0 $box-shadow-color;       // default
+$box-shadow-standard: 0 2px 4px 0 $box-shadow-color;         // default
 
 /* SPACING */
 $spacer: 1rem;
