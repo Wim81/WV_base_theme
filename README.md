@@ -1,4 +1,4 @@
-# WV_base_theme
+# WV_base_theme v1.0
 
 ## Introduction
 
@@ -11,13 +11,12 @@ This theme uses the following technologies/frameworks/libraries:
 - **Gulp** for automation
 - **jQuery** because I still like it, even in this day and age, for writing simpler Javascript
 
-This theme contains a kitchen sink page, which shows all default components.
-The idea is to take this as a easy starting point upon which to build a new, custom theme.
+This theme contains a few pages which show all default components.
+The idea is to take this as a easy starting point for new projects, having some of the most common components and styling structures already in place.
 
-This base theme has a lot of default values which show how the components are built.
-These default values should be overwritten. When you dou, please remove the *//default* comment for obvious reasons
+This base theme has a lot of default values. These should be overwritten. When you do, please remove the *//default* comment.
 
-In general, a BEM methodology has been used in the Sass setup.
+In general, a kind-of-BEM methodology has been used in the Sass setup.
 I tend not to overdo this though, and have maintained my personal preference as to the extent of BEM usage overall.
 You'll see what I mean when diving into the code.
 
@@ -54,6 +53,7 @@ Let's take a short look at what is exactly happening in each of these scripts.
 #### gulp images
 - a minified copy of each image is made
 - the command line output shows details on the minification
+- only new or modified images are affected, which makes the process faster
 
 #### gulp watch
 - will perform these functions on each (appropriate) change and reload the browser to show the changes without manually having to refresh the browser window
@@ -65,16 +65,22 @@ The theme provides you with a number of default values in the *\_variables.scss 
 The variables are grouped in the following sections:
 - **colours** has most common colour variables listed.
 - **fonts** holds all things fonts & text. Please place imports (e.g. Google Fonts) on the top row of the file, though. We use a (non-Bootstrap) h0 class for a one-off main title for a project (in order not to lose the h1 tag for just one usage). Subtitles to headers are styled by using the secondary classes.
-- **buttons** just has a few standard variables for all buttons, so they always look in line with each other. For alternative stylings, you can choose to add variables here and use them wherever possible, or - which we would advice you - add those variables in the buttons scss file. Whichever way works best for you, will be just fine.
+- **buttons** just has a few standard variables for all buttons, so they always look in line with each other. For alternative stylings, you can choose to add variables here and use them wherever possible, or add those variables in the buttons scss file. Whichever way works best for you, will be just fine.
 - **transition** is usually just one variable which determines the transition effect for the entire site, however if your project has a number of different transitions, this would be the place to add more variables.
 - **box shadow** is usually just one variable which determines the box-shadow appearance for the entire site, however if your project has a number of different box-shadow setups, this would be the place to add more variables.
 - **spacing** extends Bootstraps standard spacing variables, giving you more control over the existing variables and producing more of them. All Bootstrap padding and margin classes will be affected by modifying spacers map (either by multiplying the 1rem baseline or by defining these in pixels or rem), which makes this really powerful and useful. You can add more lines if needed as well. Please be adviced to keep this list logically laid out and in ascending order. If not, you might make paddings and margins less intuitive to work with, which should be avoided.
 
 ## Components
 
-The index.html file contains a number of standard components in a "kitchen sink style". When in need for a component, check these out before heading over to the Bootstrap documentation. Chances are, the component has been incorporated here in a more customized way. If not, feel free to use Bootstrap components directly, of course. Components are constructed using BEM methodology whenever sensible.
+The standard components have been split in a couple of pages:
+- **basic components** are the most basic elements like headers, buttons, links & lists. Also included here are breadcrumbs and paginations.
+- **page parts** are the most commonly used components to put together a web page, e.g. by using a CMS.
+- **views** show a number of teasers and cards, which are laid out in views
+- **forms** show form elements
 
-These components use the overall variables to style its contents where possible, but will often use specific styling which is located in the /scss/custom/partials folder. Feel free to modify these files to your liking. We recommend you just rename the original file, make your own new file (with the original file's initial name) and place your own styling code in there by copying the parts you can use from the original and adding your own. If you want to take this even further, you can rename the partials folder in its entirety and make a new partials folder and build the underlying files from scratch. Whichever way works best for you.
+When in need for a component, check these out before heading over to the Bootstrap documentation. Chances are, the component has been incorporated here in a more customized way. If not, feel free to use Bootstrap components directly, of course. Components are constructed using BEM methodology whenever sensible.
+
+These components use the overall variables to style its contents where possible, but will often use specific styling which is located in the /scss/custom/partials and /scss/custom/page-parts folders. Feel free to modify these files to your liking. We recommend you just rename the original file, make your own new file (with the original file's initial name) and place your own styling code in there by copying the parts you can use from the original and adding your own. If you want to take this even further, you can rename the partials folder in its entirety and make a new partials folder and build the underlying files from scratch. Whichever way works best for you.
 
 ## Mixins
 
@@ -83,4 +89,24 @@ A number of mixins has been added to make some standard styling situations easie
 - `full-width`: from within whichever container you can make sure your div is full-width by applying this mixin. Typically very handy for page parts which need a full width background image or background color.
 - `font`: this mixin is extensively used in the typography file and combines a number of font/text variables which are common.
 - `bg-img`: this mixin quickly applies the typical background image setup no-repeat/cover/center.
+- `bg-img-contain`: same thing, but instead of covering the div, the image is contained in it
 
+## Utility classes
+
+Sometimes you just want to quickly add a class for a recurring effect. On top of Bootstrap's utility classes, there are a few custom ones in the theme.
+
+- `bg-[COLOR]`: a number of classes to quickly modify an element's background-colour and some of its contents.
+- `overlay classes`: quickly apply an overlay effect on an element, and make sure all of its contents are put on top of that overlay.
+
+
+## So that's it for now...
+But I will be working on v1.1 the following months. Among the features I plan to add for that version are:
+- image slider
+- image gallery with interactive modal
+- customized select elements in forms
+- landing page template with sidebar
+- animated hamburger menu's
+- more (complex) headers & footers
+- ...
+
+But that's for later. If you plan to use this setup, good luck, and please do not hesitate to reach out to me.
