@@ -1,8 +1,9 @@
-# WV_base_theme v1.0
+# WV base theme v1.0
 
 ## Introduction
 
-Welcome to the documentation of my personal front-end base theme.
+Welcome to the documentation of my personal front-end base theme. This theme is my "big bag of often needed front-end stuff", which saves me a lot of time when developing new sites. As such, this is an always evolving base theme, for which I will periodically put out a new "release". This is version 1.0.
+
 This theme uses the following technologies/frameworks/libraries:
 
 - **Sass** for CSS preprocessing
