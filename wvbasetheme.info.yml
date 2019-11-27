@@ -1,0 +1,17 @@
+name: WVBaseTheme
+type: theme
+description: 'WV Base Theme - by Wim Verpoorten'
+package: Core
+version: VERSION
+core: 8.x
+base theme: stable
+engine: twig
+libraries:
+- wvbasetheme/global-styling
+- wvbasetheme/global-scripts
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+  above_footer: 'Above Footer'
+  modal: Modal

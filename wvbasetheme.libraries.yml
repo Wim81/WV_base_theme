@@ -1,0 +1,18 @@
+global-styling:
+  version: 1.x
+  css:
+    style:
+      dist/css/style.css: { media: screen }
+global-scripts:
+  version: 1.x
+  js:
+    node_modules/slick-slider/slick/slick.min.js: {}
+    node_modules/simplelightbox/dist/simple-lightbox.min.js: {}
+    node_modules/selectize/dist/js/standalone/selectize.min.js: {}
+    node_modules/selectize/dist/js/standalone/selectize.js: {}
+    node_modules/bootstrap/dist/js/bootstrap.js: {}
+    dist/js/countup.js: {}
+    dist/js/script.js: {}
+    dist/js/header-sticky-scroll.js: {}
+  dependencies:
+    - core/jquery
