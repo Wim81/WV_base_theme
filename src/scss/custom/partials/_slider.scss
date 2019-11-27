@@ -17,6 +17,40 @@
     opacity: 1;
   }
 
+  &-dots {
+    position: initial;
+    padding-left: 18px;
+    padding-top: 1rem;
+
+    li {
+
+      &:before {
+        background-color: $grey-medium;
+        width: $slider-dot-size;
+        height: $slider-dot-size;
+        border-radius: $slider-dot-size;
+      }
+
+      button {
+        display: none;
+      }
+
+      &.slick-active:before {
+        background-color: $primary;
+      }
+    }
+  }
+
+  // class for hiding arrows for navigation on mobile, make sure to have the dots or auto sliding on in that case though
+  &-mobile-no-arrows {
+
+    @media (max-width: 768px) {
+      .slick-arrow {
+        display: none;
+      }
+    }
+  }
+
   // fix for unwanted box-shadow cut-off
   &-list {
     box-sizing: initial;

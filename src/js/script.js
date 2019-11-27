@@ -7,6 +7,14 @@ $(document).ready( function() {
      slidesToShow: 1,
      });
 
+    // pp_slider_slider-images slider action
+    $(".slider-image-wrapper").slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        dots: true
+    });
+
     /* make form labels appear when there is input */
     $(".label-switch").keyup(function() {
         if ($(this).val() ) {
