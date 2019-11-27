@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the documentation of my personal front-end base theme. This theme is my "big bag of often needed front-end stuff", which saves me a lot of time when developing new sites. As such, this is an always evolving base theme, for which I will periodically put out a new "release". This is version 1.0.
+Welcome to the documentation of my personal front-end base theme. This theme is my "big bag of often needed front-end stuff", which saves me a lot of time when developing new sites. As such, this is an always evolving base theme, for which I will periodically put out a new "release". This is version 1.1.
 
 This theme uses the following technologies/frameworks/libraries:
 
@@ -20,6 +20,17 @@ This base theme has a lot of default values. These should be overwritten. When y
 In general, a kind-of-BEM methodology has been used in the Sass setup.
 I tend not to overdo this though, and have maintained my personal preference as to the extent of BEM usage overall.
 You'll see what I mean when diving into the code.
+
+## New features in v1.1
+The following features have been added in v1.1:
+- image slider
+- image gallery with interactive modal
+- customized select elements in forms
+- landing page template with sidebar
+- landing page header & footer
+- complex header, incl. 3 navs, 3 levels in main nav, searchbar, language switch
+- sticky header action which reacts to scroll
+- animated hamburger menu's
 
 ## Initialization
 
@@ -70,14 +81,19 @@ The variables are grouped in the following sections:
 - **transition** is usually just one variable which determines the transition effect for the entire site, however if your project has a number of different transitions, this would be the place to add more variables.
 - **box shadow** is usually just one variable which determines the box-shadow appearance for the entire site, however if your project has a number of different box-shadow setups, this would be the place to add more variables.
 - **spacing** extends Bootstraps standard spacing variables, giving you more control over the existing variables and producing more of them. All Bootstrap padding and margin classes will be affected by modifying spacers map (either by multiplying the 1rem baseline or by defining these in pixels or rem), which makes this really powerful and useful. You can add more lines if needed as well. Please be adviced to keep this list logically laid out and in ascending order. If not, you might make paddings and margins less intuitive to work with, which should be avoided.
+- **slider** keeps some variables to manipulate the elements using a slider
+- **landing page sidebar** has some variables to quickly modify the sidebar on the landing page
+- **social block** keeps variables to manipulate social icons in one place
 
 ## Components
 
 The standard components have been split in a couple of pages:
-- **basic components** are the most basic elements like headers, buttons, links & lists. Also included here are breadcrumbs and paginations.
+- **basic components** are the most basic elements like headers, buttons, links & lists. Also included here are breadcrumbs and paginations. This page also shows the "show header on scroll up" functionality.
 - **page parts** are the most commonly used components to put together a web page, e.g. by using a CMS.
 - **views** show a number of teasers and cards, which are laid out in views
 - **forms** show form elements
+- **landing page** shows the default landing page setup, with custom header, footer and intro section with sidebar
+- **large header** shows a more complex header setup. For any header (default, large or landing page), simply add "header-sticky-scroll" class to make the header appear on a scroll-up action
 
 When in need for a component, check these out before heading over to the Bootstrap documentation. Chances are, the component has been incorporated here in a more customized way. If not, feel free to use Bootstrap components directly, of course. Components are constructed using BEM methodology whenever sensible.
 
@@ -101,13 +117,4 @@ Sometimes you just want to quickly add a class for a recurring effect. On top of
 
 
 ## So that's it for now...
-But I will be working on v1.1 the following months. Among the features I plan to add for that version are:
-- image slider
-- image gallery with interactive modal
-- customized select elements in forms
-- landing page template with sidebar
-- animated hamburger menu's
-- more (complex) headers & footers
-- ...
-
-But that's for later. If you plan to use this setup, good luck, and please do not hesitate to reach out to me.
+But - as stated before - this is an always evolving theme. At some stage, I will mention planned functionality for v1.2 here, but that's for later.
