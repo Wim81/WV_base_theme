@@ -1,0 +1,15 @@
+.pp_image_gallery {
+
+  .gallery-image {
+
+    &-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

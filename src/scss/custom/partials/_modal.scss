@@ -1,0 +1,37 @@
+// simple lightbox modal
+.sl {
+
+  &-wrapper {
+
+    .sl-close {
+      color: $primary;
+    }
+
+    .sl-counter {
+      display: none !important;           // nog in JS zetten (is een optie van de plugin)
+      font-family: $font-text;
+      color: $primary;
+    }
+
+    .sl-navigation {
+
+      .sl-prev,
+      .sl-next {
+        color: $primary;
+      }
+    }
+
+    .sl-spinner {
+
+    }
+
+    .sl-image {
+
+    }
+  }
+
+  &-overlay {
+    background-color: $primary;
+    opacity: 0.2;
+  }
+}

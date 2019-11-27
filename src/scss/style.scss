@@ -9,6 +9,7 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";   // FontAwesome
 @import "../../node_modules/slick-carousel/slick/slick.scss";             // Slick slider
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";       // Slick slider
+@import "../../node_modules/simplelightbox/dist/simplelightbox.scss";     // Simple Lightbox
 /*  END OF NPM IMPORTS  */
 
 /*  GENERAL STUFF  */
@@ -21,6 +22,7 @@
 /*  PAGE PARTS  */
 @import "./custom/page-parts/pp_cta";                                     // Call to action block
 @import "./custom/page-parts/pp_facts";                                   // Facts block with animated numbers
+@import "./custom/page-parts/pp_image_gallery";                           // Image gallery with interactive modal (modal can be disabled if wanted)
 @import "./custom/page-parts/pp_quote";                                   // Quote block
 @import "./custom/page-parts/pp_slider_images";                           // Collection of images with slider functionality
 @import "./custom/page-parts/pp_slider_testimonials";                     // Testimonial block with slider functionality
@@ -43,5 +45,6 @@
 @import "./custom/partials/buttons";                                      // buttons
 @import "./custom/partials/form";                                         // forms
 @import "./custom/partials/slider";                                       // slider
+@import "./custom/partials/modal";                                        // modal
 @import "./custom/partials/utility";                                      // custom utility classes
 /*  END OF OTHER PARTIALS  */

@@ -15,6 +15,11 @@ $(document).ready( function() {
         dots: true
     });
 
+    // pp_image_gallery interactive modal action
+    if( $(".gallery a").length ) {
+        var lightbox = $(".gallery a").simpleLightbox();
+    }
+
     /* make form labels appear when there is input */
     $(".label-switch").keyup(function() {
         if ($(this).val() ) {
@@ -22,7 +27,7 @@ $(document).ready( function() {
         } else {
             $(this).prev().css("opacity", 0);
         }
-    })
+    });
 
     /* form select arrow movement on click */
     $("form .select-wrapper").on("click", function(e) {
