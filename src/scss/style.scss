@@ -11,6 +11,7 @@
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";       // Slick slider
 @import "../../node_modules/simplelightbox/dist/simplelightbox.scss";     // Simple Lightbox
 @import "../../node_modules/selectize/dist/css/selectize.css";            // Selectize.js (custom dropdown menus)
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";      // Animated Hamburger menu's
 /*  END OF NPM IMPORTS  */
 
 /*  GENERAL STUFF  */
@@ -47,6 +48,7 @@
 @import "./custom/partials/buttons";                                      // buttons
 @import "./custom/partials/form";                                         // forms
 @import "./custom/partials/slider";                                       // slider
+@import "./custom/partials/hamburgers";                                   // animated hamburgers
 @import "./custom/partials/modal";                                        // modal
 @import "./custom/partials/landing-page";                                 // landing page
 @import "./custom/partials/utility";                                      // custom utility classes

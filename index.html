@@ -16,9 +16,22 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg align-items-stretch">
                         <a class="navbar-brand home-link" href="/index.html">Wim's Theme</a>
+
+                        <!-- BOOTSTRAP DEFAULT HAMBURGER, NOT ANIMATED -->
+                        <!--
                         <button class="navbar-toggler align-self-center" type="button" data-toggle="collapse" data-target="#wvBaseThemeNav01" aria-controls="wvBaseThemeNav01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+                        -->
+                        <!-- end of BOOTSTRAP DEFAULT HAMBURGER -->
+
+                        <!-- EXAMPLE OF AN ANIMATED HAMBURGER, CHECK THE HAMBURGERS SCSS FILE FOR MORE DATA, ONLY THE LAST CLASS NAME NEEDS TO BE MODIFIED -->
+                        <button class="navbar-toggler align-self-center hamburger hamburger--spring mt-4" type="button" data-toggle="collapse" data-target="#wvBaseThemeNav01" aria-controls="wvBaseThemeNav01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <!-- end of EXAMPLE OF AN ANIMATED HAMBURGER -->
 
                         <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="wvBaseThemeNav01">
                             <ul class="navbar-nav no-list-style">

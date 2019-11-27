@@ -1,0 +1,37 @@
+/* ANIMATED HAMBURGERS ONLY. You can add styling for the default bootstrap hamburger here if you like, but there are no custom values for that icon included here */
+/* for a complete list of options, please take a look at https://jonsuh.com/hamburgers/ */
+/* add the right class to the markup & customize the hamburger to your design's needs */
+
+
+/* modify the hamburger icon's width */
+.hamburger-box,
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after {
+  width: 20px;
+}
+
+/* hamburger color */
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before,
+.hamburger.is-active .hamburger-inner:after {
+  background-color: $primary;
+}
+
+/* reposition the middle and lower bar
+   (will always be specific for each variation, change the first classname accordingly) */
+.hamburger--spring {
+
+  .hamburger-inner {
+
+    &:before {
+      top: 7px;
+    }
+
+    &:after {
+      top: 14px;
+    }
+  }
+}

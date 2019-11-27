@@ -52,4 +52,8 @@ $(document).ready( function() {
         $(this).parent().find('.file-input-wrapper-filename').html(fileName);
     });
 
+    /* animated hamburger menu class toggle */
+    $('.hamburger').on("click", function() {
+        $(this).toggleClass("is-active");
+    });
 });
