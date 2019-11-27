@@ -1,0 +1,33 @@
+.landing_page {
+
+  &-intro_section {
+
+    @media (min-width: 768px) {
+      margin-bottom: $landingpage-indent;
+    }
+
+    &-sidebar {
+      background-color: $grey-very-light;
+      padding: $landingpage-sidebar-padding-narrow;
+
+      @media (min-width: 440px) {
+        padding: $landingpage-sidebar-padding;
+      }
+
+      @media (min-width: 768px) {
+        padding: $landingpage-sidebar-padding-narrow;
+        order: 2;
+        position: relative;
+        top: $landingpage-indent;
+      }
+
+      @media (min-width: 992px) {
+        padding: $landingpage-sidebar-padding;
+      }
+    }
+
+    &-text {
+
+    }
+  }
+}

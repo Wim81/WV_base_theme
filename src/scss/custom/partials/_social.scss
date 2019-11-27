@@ -1,0 +1,51 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+
+    li:first-of-type a {
+      margin-left: 0;
+    }
+  }
+
+  li {
+    display: inline-block;
+    line-height: initial;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    font-size: 0px;
+    color: $social-item-color;
+    transition: $transition-standard;
+    margin: 0 0.5rem;
+
+    i {
+      font-size: $social-item-size;
+
+    }
+
+    &:hover {
+      color: $social-item-hover-color;
+      transition: $transition-standard;
+    }
+  }
+
+  &-alt {
+
+    a {
+      color: $social-item-alt-color;
+
+      i {
+        font-size: $social-item-alt-size;
+      }
+
+      &:hover {
+        color: $social-item-alt-hover-color;
+      }
+    }
+  }
+}

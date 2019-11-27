@@ -167,3 +167,18 @@ $spacers: map-merge(
 /* SLIDER */
 
 $slider-dot-size:           10px;                           // default
+
+/* LANDING PAGE SIDEBAR */
+
+$landingpage-sidebar-padding: 3rem 4rem;                    // default
+$landingpage-sidebar-padding-narrow: 3rem 2rem;             // default
+$landingpage-indent: -10rem;                                // default
+
+/* SOCIAL BLOCK */
+$social-item-size: 1.4rem;                                  // default
+$social-item-color: $grey-medium;                           // default
+$social-item-hover-color: $primary;                         // default
+
+$social-item-alt-size: 1rem;                                // default
+$social-item-alt-color: $primary;                           // default
+$social-item-alt-hover-color: $grey-medium;                 // default

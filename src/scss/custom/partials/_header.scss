@@ -69,3 +69,35 @@ header {
     }
   }
 }
+
+.header-landing {
+
+  &-left {
+
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 28px;
+
+    @media (min-width: 480px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  }
+
+  &-social.social {
+    order: 2;
+    margin: 1rem 0;
+    justify-content: flex-end;
+
+    @media (min-width: 480px) {
+      order: 0;
+      margin: 0 1rem 0 0;
+    }
+  }
+}

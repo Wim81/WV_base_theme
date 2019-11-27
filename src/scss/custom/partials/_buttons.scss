@@ -40,3 +40,103 @@
     background-color: transparent;
   }
 }
+
+.language-switch {
+
+  .header-large & {
+    form,
+    .selectize-input {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // selectize classes
+  .selectize-control {
+    display: flex;
+
+    .selectize-input {
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+
+      .header-landing & {
+        border-left: 2px solid $grey-medium;
+      }
+
+      &:after {
+        content: '\f107';
+        font-family: $font-awesome;
+        font-weight: bold;
+        display: inline-block;
+        pointer-events: none;
+        top: 0.85rem;
+        right: 1rem;
+        color: $grey-dark;
+        transition: $transition-standard;
+        border-style: none;
+        border-width: 0;
+        border-color: transparent;
+        width: 0.5rem;
+        height: 1rem;
+      }
+
+      &.dropdown-active {
+        background-color: transparent;
+      }
+
+      &.dropdown-active:after {
+        transform: rotate(-180deg);
+      }
+
+      .item {
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        width: 100%;
+        font-size: $font-size-base-min;
+        line-height: $line-height-base-min;
+        color: $primary;
+        font-weight: $weight-bold;
+        cursor: pointer;
+
+        &[data-value='0'] {
+          color: $grey-light;
+        }
+      }
+
+      input {
+        display: none !important; // plugin overwrite
+      }
+    }
+
+    .selectize-dropdown {
+      border-radius: 0;
+      border: none;
+      margin: 0 0.5rem;
+      max-width: calc(100% - 1rem);
+
+      &-content {
+
+        .option {
+          padding: 0.5rem 1rem;
+          display: flex;
+          color: $primary;
+
+          &.active {
+            background-color: $primary;
+            color: $white;
+          }
+
+          &:not([data-selectable]) {
+            background-color: $grey-very-light;
+            color: $primary;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+  // end of selectize classes
+}

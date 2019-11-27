@@ -98,4 +98,44 @@
     }
   }
 
+  &-landing {
+    padding-top: 3rem;
+
+    @media (min-width: 768px) {
+      padding-top: 1.5rem;
+    }
+
+    &-top-inner {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+
+      .home-link {
+        margin: 0 auto 30px auto;
+
+        @media (min-width: 768px) {
+          margin: 0;
+        }
+      }
+
+      .social {
+        order: 2;
+
+        @media (min-width: 768px) {
+          order: 0;
+          margin-bottom: 0;
+          align-items: flex-end;
+
+          li {
+            padding-bottom: 0.3rem;
+          }
+        }
+      }
+    }
+  }
 }
