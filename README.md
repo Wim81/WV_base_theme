@@ -1,4 +1,4 @@
-# WV base theme v1.0
+# WV base theme v1.1
 
 ## Introduction
 
