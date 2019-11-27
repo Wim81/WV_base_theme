@@ -100,31 +100,78 @@
     }
   }
 
-  select {
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    -webkit-appearance: none;
-  }
-
   .select-wrapper {
     position: relative;
 
-    &:after {
-      content: '\f107';
-      font-family: $font-awesome;
-      font-weight: bold;
-      display: inline-block;
-      pointer-events: none;
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      color: $grey-dark;
-      transition: $transition-standard;
-    }
+    // selectize classes
+    .selectize-control {
+      margin-bottom: 1rem;
 
-    &.open:after {
-      transform: rotate(-180deg);
+      .selectize-input {
+        padding: 0;
+        border-radius: 0;
+
+        &:after {
+          content: '\f107';
+          font-family: $font-awesome;
+          font-weight: bold;
+          display: inline-block;
+          pointer-events: none;
+          top: 1rem;
+          right: 1rem;
+          color: $grey-dark;
+          transition: $transition-standard;
+          border-style: none;
+          border-width: 0;
+          border-color: transparent;
+          width: 0.5rem;
+          height: 1rem;
+        }
+
+        &.dropdown-active:after {
+          transform: rotate(-180deg);
+        }
+
+        .item {
+          padding: 0.5rem 1rem;
+          width: 100%;
+          font-size: $font-size-base;
+          line-height: $line-height-base;
+          color: $grey-dark;
+
+          &[data-value='0'] {
+            color: $grey-light;
+          }
+        }
+
+        input {
+          display: none !important;  // plugin overwrite
+        }
+      }
+
+      .selectize-dropdown {
+        border-radius: 0;
+
+        &-content {
+
+          .option {
+            padding: 0.5rem 1rem;
+
+            &.active {
+              background-color: $primary;
+              color: $white;
+            }
+
+            &:not([data-selectable]) {
+              background-color: $grey-very-light;
+              color: $primary;
+              font-style: italic;
+            }
+          }
+        }
+      }
     }
+    // end of selectize classes
   }
 
   .radio-group {

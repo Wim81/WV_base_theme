@@ -21,6 +21,7 @@
     "countup.js": "^2.0.4",
     "jquery": "^3.4.1",
     "sass": "^1.22.9",
+    "selectize": "^0.12.6",
     "simplelightbox": "^1.17.2",
     "slick-carousel": "^1.8.1"
   },

@@ -40,6 +40,11 @@ $(document).ready( function() {
        $(this).toggleClass("checked");
     });
 
+    // form custom select box with selectize.js
+    $(".form-select").selectize({
+        create:  false
+    });
+
     /* form show file name uploaded file */
     $('.file-input-action').bind('change', function() {
         var fileName = '';
