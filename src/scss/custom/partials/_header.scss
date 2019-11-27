@@ -514,3 +514,10 @@ header {
     }
   }
 }
+
+.header-sticky-scroll {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  transition: all .2s ease-in-out;
+}
