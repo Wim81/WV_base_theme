@@ -23,12 +23,19 @@ const cssFileName = "style.css";
 // Define both source and destination folders & affected file types
 const paths = {
     styles: {
-        src: "src/scss/**/*.scss",
+        src:  "src/scss/**/*.scss",
         dest: "dist/css"
     },
     html: "./*.html",
     scripts: {
-        src: ["src/js/**/*.js"],
+        src: [
+            "src/js/**/*.js",
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/slick-carousel/slick/slick.min.js",
+            "node_modules/simplelightbox/dist/simple-lightbox.min.js",
+            "node_modules/selectize/dist/js/standalone/selectize.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.js"
+            ],
         dest: "dist/js"
     },
     images: {
@@ -87,7 +94,6 @@ function images() {
 }
 
 exports.images = images;
-
 
 // A simple task to reload the page
 function reload() {

@@ -46,8 +46,10 @@ $header-large-background-color: $header-background-color;    // default
 
 @font-face {
   font-family: 'Clock Font';
-  src: url('../../../font/clock-font-italic.ttf');
+  src: url('./../../font/clock-font-italic.ttf');
 }
+
+$fa-font-path: "./../../webfonts";
 
 $font-text:                     'Raleway', sans-serif;               // default
 $font-titles:                   'Oxygen', sans-serif;                // default

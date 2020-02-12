@@ -6,11 +6,13 @@
 
 /*  NPM IMPORTS  */
 @import "../../node_modules/bootstrap/scss/bootstrap";                    // import default Bootstrap code
-@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";   // FontAwesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";   // FontAwesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";    // FontAwesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";   // FontAwesome
 @import "../../node_modules/slick-carousel/slick/slick.scss";             // Slick slider
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";       // Slick slider
 @import "../../node_modules/simplelightbox/dist/simplelightbox.scss";     // Simple Lightbox
-@import "../../node_modules/selectize/dist/css/selectize.css";            // Selectize.js (custom dropdown menus)
+@import "./custom/selectize";                                             // Selectize.js (custom dropdown menus)
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";      // Animated Hamburger menu's
 /*  END OF NPM IMPORTS  */
 

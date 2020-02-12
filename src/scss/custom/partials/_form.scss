@@ -28,7 +28,7 @@
     margin-bottom: 0;
     font-size: $font-size-form-label;
     text-transform: uppercase;
-    transition: $transition-base;
+    transition: $transition-standard;
 
     &.label-select {
       pointer-events: none;
