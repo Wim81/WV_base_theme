@@ -3,7 +3,7 @@ type: theme
 description: 'WV Base Theme - by Wim Verpoorten'
 package: Core
 version: VERSION
-core_version_requirement: ^8 || ^9
+core: 8.x
 base theme: stable
 engine: twig
 libraries:
